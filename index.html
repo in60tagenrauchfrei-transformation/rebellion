@@ -1,0 +1,2259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Rauchen aufhören in 21 Tagen: täglich 10 Minuten, Notfall-Button gegen Suchtdruck, Craving-Tracker und Rückfall-Neustart. Kostenlos im Browser, ohne Anmeldung.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#FBF6EE" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1C1A18" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
+    <link rel="canonical" href="https://DEIN-GITHUB-NAME.github.io/rauchfrei/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%AD%3C/text%3E%3C/svg%3E">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Rauchfrei-Rebellion">
+    <meta property="og:title" content="Rauchen aufhören in 21 Tagen – Rauchfrei-Rebellion">
+    <meta property="og:description" content="Rauchen aufhören in 21 Tagen: täglich 10 Minuten, Notfall-Button gegen Suchtdruck, Craving-Tracker und Rückfall-Neustart. Kostenlos im Browser, ohne Anmeldung.">
+    <meta property="og:url" content="https://DEIN-GITHUB-NAME.github.io/rauchfrei/">
+    <meta property="og:image" content="https://DEIN-GITHUB-NAME.github.io/rauchfrei/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "name": "Rauchfrei-Rebellion", "url": "https://DEIN-GITHUB-NAME.github.io/rauchfrei/", "inLanguage": "de"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Wie lange dauert Suchtdruck (Craving)?", "acceptedAnswer": {"@type": "Answer", "text": "Eine akute Suchtwelle dauert meist nur wenige Minuten, oft 3 bis 5, und lässt danach von selbst nach. Der Notfall-Button in diesem Programm führt dich mit einem Timer und einer Atemübung durch diese Zeit."}}, {"@type": "Question", "name": "Was hilft sofort gegen Suchtdruck?", "acceptedAnswer": {"@type": "Answer", "text": "Zeit gewinnen und den Ort wechseln: Atemübung (4-7-8), ein Glas Wasser, ein kurzer Spaziergang oder 5 Minuten Ablenkung. Wichtig ist, nicht sofort nachzugeben, sondern die Welle abklingen zu lassen."}}, {"@type": "Question", "name": "Was mache ich, wenn ich einen Rückfall habe?", "acceptedAnswer": {"@type": "Answer", "text": "Ein Ausrutscher ist kein Scheitern. Frage dich, welcher Auslöser dahinterstand, schreibe dir einen neuen Wenn-dann-Plan und starte mit dem Neustart-Button erneut. Wer nach einer Zigarette weitermacht mit dem Aufhören, hat gute Chancen."}}, {"@type": "Question", "name": "Du bist hier, weil …", "acceptedAnswer": {"@type": "Answer", "text": "Du bist hier, weil du dir etwas Gutes tun willst. Weil ein Teil von dir längst weiß, dass du mehr verdienst als Husten am Morgen, Hektik vor der nächsten Pause und das Gefühl, von einer Gewohnheit gesteuert zu werden. Du bist hier, weil du deinem Körper, den Menschen, die dich lieben, und vor allem dir selbst ein neues Kapitel schenken möchtest. Das ist kein kleiner Schritt, das ist Mut. Du musst nicht perfekt sein und nicht alles auf einmal schaffen. Jede Atemübung, jeder Tag und jede überstandene Suchtwelle zählt. Und du gehst diesen Weg nicht allein: Wir begleiten dich, Schritt für Schritt. Schön, dass du da bist."}}, {"@type": "Question", "name": "Ersetzt das Programm eine ärztliche Beratung?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Bei starker Abhängigkeit, Vorerkrankungen oder Medikamenten sprich bitte mit deiner Hausarztpraxis."}}]}]}</script>
+    <title>Rauchen aufhören in 21 Tagen – Rauchfrei-Rebellion | Kostenloses Programm</title>
+    
+    <!-- Apple iOS / Safari Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Rauchfrei-Rebellion">
+    <meta name="format-detection" content="telephone=no">
+
+    <style>
+        :root {
+            --bg-color: #060911;
+            --card-bg: rgba(13, 22, 38, 0.7);
+            --card-border: rgba(0, 243, 255, 0.18);
+            --neon-cyan: #00f3ff;
+            --cyan-glow: rgba(0, 243, 255, 0.4);
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --text-white: #ffffff;
+            --success-green: #00ff88;
+            --accent-purple: #b14bff;
+            --accent-yellow: #ffe14d;
+        }
+
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+            -webkit-tap-highlight-color: transparent; 
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            min-height: 100vh;
+            min-height: 100dvh;
+            overflow-x: hidden;
+            background-image:
+                radial-gradient(circle at 20% 30%, rgba(0, 243, 255, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(0, 243, 255, 0.06) 0%, transparent 50%);
+            padding-top: max(20px, env(safe-area-inset-top));
+            padding-bottom: max(40px, calc(20px + env(safe-area-inset-bottom)));
+            padding-left: max(0px, env(safe-area-inset-left));
+            padding-right: max(0px, env(safe-area-inset-right));
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .glow-orb {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: var(--neon-cyan);
+            filter: blur(120px);
+            -webkit-filter: blur(120px);
+            opacity: 0.15;
+            z-index: 1;
+            pointer-events: none;
+        }
+        .orb-1 { top: 10%; left: -100px; }
+        .orb-2 { top: 45%; right: -120px; }
+        .orb-3 { top: 80%; left: -80px; }
+
+        .status-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding: 12px 20px;
+            background: rgba(10, 16, 28, 0.8);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--neon-cyan);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--neon-cyan);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--neon-cyan);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.4); opacity: 0.6; }
+        }
+
+        .program-phase {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+        }
+
+        .header-title { text-align: center; margin-bottom: 40px; }
+
+        .header-title h1 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 800;
+            color: var(--text-white);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .header-title h1 span {
+            color: var(--neon-cyan);
+            text-shadow: 0 0 15px var(--cyan-glow);
+        }
+
+        .header-title p.subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-top: 10px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 24px 32px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 4px; height: 100%;
+            background: var(--neon-cyan);
+        }
+
+        .card.completed { border-color: rgba(0, 255, 136, 0.4); }
+        .card.completed::before { background: var(--success-green); }
+
+        .card.locked {
+            opacity: 0.55;
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        .card.locked::before {
+            background: var(--text-muted);
+        }
+        .card.locked .day-header {
+            cursor: not-allowed;
+        }
+
+        .intro-card {
+            border: 1px solid rgba(0, 243, 255, 0.3);
+            padding: 32px;
+        }
+
+        .intro-card h2, .card h3 {
+            font-size: 1.4rem;
+            color: var(--neon-cyan);
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .quote-box {
+            font-style: italic;
+            border-left: 3px solid var(--neon-cyan);
+            padding: 12px 20px;
+            background: rgba(0, 243, 255, 0.05);
+            margin: 20px 0;
+            color: #fff;
+        }
+
+        .quote-author {
+            display: block;
+            margin-top: 8px;
+            font-style: normal;
+            font-weight: 700;
+            color: var(--neon-cyan);
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .highlight-box {
+            background: rgba(0, 243, 255, 0.05);
+            border-left: 3px solid var(--neon-cyan);
+            padding: 16px 20px;
+            margin-top: 20px;
+            border-radius: 0 8px 8px 0;
+            font-weight: 600;
+            color: var(--text-white);
+        }
+
+        .highlight-box span.bold-cyan {
+            color: var(--neon-cyan);
+            font-size: 1.1rem;
+            display: block;
+            margin-top: 6px;
+        }
+
+        .neuro-box {
+            background: rgba(6, 12, 24, 0.8);
+            border: 1px solid rgba(0, 243, 255, 0.2);
+            border-radius: 12px;
+            padding: 18px 22px;
+            margin: 18px 0;
+        }
+
+        .neuro-box h5 {
+            color: var(--neon-cyan);
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.05rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .action-box {
+            background: rgba(0, 255, 136, 0.05);
+            border-left: 3px solid var(--success-green);
+            padding: 16px 20px;
+            margin-top: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .action-box h5 {
+            color: var(--success-green);
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+
+        .icon-wrapper {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(0, 243, 255, 0.1);
+            border: 1px solid var(--neon-cyan);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: var(--neon-cyan);
+            flex-shrink: 0;
+        }
+
+        .story-p {
+            font-size: 1.05rem;
+            color: #cbd5e1;
+            margin-bottom: 14px;
+        }
+
+        .facts-grid, .timeline-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .timeline-item {
+            background: rgba(6, 12, 24, 0.7);
+            border: 1px solid rgba(0, 243, 255, 0.25);
+            border-radius: 12px;
+            padding: 16px 18px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .timeline-item:hover {
+            transform: translateY(-2px);
+            border-color: var(--neon-cyan);
+        }
+
+        .timeline-item .time {
+            color: var(--neon-cyan);
+            font-size: 1.05rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .timeline-item .effect {
+            color: #fff;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .facts-grid, .timeline-grid, .metrics-grid, .rebellion-stats, .input-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .container { padding: 15px 10px; }
+            .card { padding: 20px; }
+        }
+
+        .fact-item {
+            background: rgba(6, 12, 24, 0.6);
+            border: 1px solid rgba(0, 243, 255, 0.2);
+            border-radius: 12px;
+            padding: 16px 20px;
+        }
+
+        .fact-item h4 {
+            color: var(--neon-cyan);
+            font-size: 1rem;
+            margin-bottom: 6px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .launch-steps {
+            list-style: none;
+            counter-reset: launch-counter;
+            margin-top: 15px;
+        }
+
+        .launch-steps li {
+            counter-increment: launch-counter;
+            position: relative;
+            padding-left: 45px;
+            margin-bottom: 20px;
+        }
+
+        .launch-steps li::before {
+            content: counter(launch-counter);
+            position: absolute;
+            left: 0; top: 0;
+            width: 32px; height: 32px;
+            background: rgba(0, 243, 255, 0.1);
+            border: 1px solid var(--neon-cyan);
+            color: var(--neon-cyan);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+        }
+
+        .launch-steps h4 { color: #fff; margin-bottom: 4px; }
+
+        .progress-sticky {
+            position: sticky;
+            top: max(20px, env(safe-area-inset-top));
+            z-index: 100;
+            background: rgba(6, 9, 17, 0.95);
+            border: 1px solid var(--neon-cyan);
+            border-radius: 16px;
+            padding: 20px 25px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            box-shadow: 0 0 25px var(--cyan-glow);
+        }
+
+        .progress-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+        }
+
+        .progress-track {
+            width: 100%;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 243, 255, 0.2);
+        }
+
+        .progress-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, var(--neon-cyan), var(--success-green));
+            transition: width 0.6s ease;
+            box-shadow: 0 0 15px var(--neon-cyan);
+        }
+
+        .input-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-top: 18px;
+        }
+
+        .input-grid label {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--neon-cyan);
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .input-grid input {
+            width: 100%;
+            background: rgba(6, 12, 24, 0.7);
+            border: 1px solid rgba(0, 243, 255, 0.25);
+            border-radius: 8px;
+            padding: 12px 14px;
+            color: #fff;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .input-grid input:focus {
+            outline: none;
+            border-color: var(--neon-cyan);
+            box-shadow: 0 0 10px var(--cyan-glow);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px;
+            margin-top: 18px;
+        }
+
+        .metric-tile {
+            background: rgba(6, 12, 24, 0.7);
+            border: 1px solid rgba(0, 243, 255, 0.25);
+            border-radius: 12px;
+            padding: 14px 16px;
+            text-align: center;
+        }
+
+        .metric-tile .label {
+            color: var(--text-muted);
+            font-size: 0.78rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .metric-tile .value {
+            color: var(--neon-cyan);
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        .metric-tile .unit {
+            color: var(--text-white);
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+
+        .btn-save {
+            margin-top: 18px;
+            background: var(--neon-cyan);
+            color: #040914;
+            font-size: 1rem;
+            font-weight: 800;
+            padding: 12px 28px;
+            min-height: 44px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: transform 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-family: inherit;
+        }
+
+        .btn-save:hover {
+            transform: scale(1.04);
+            box-shadow: 0 0 20px var(--cyan-glow);
+        }
+
+        .day-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            padding: 8px 0;
+            min-height: 44px;
+            transition: color 0.2s ease;
+        }
+
+        .day-header:hover .day-title-preview { color: var(--neon-cyan); }
+        .day-header-left { display: flex; align-items: center; gap: 16px; }
+
+        .day-badge {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--neon-cyan);
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        .day-title-preview {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+        .day-header-right { display: flex; align-items: center; gap: 14px; }
+
+        .chevron-icon {
+            font-size: 1.1rem;
+            color: var(--neon-cyan);
+            transition: transform 0.3s ease;
+            width: 28px; height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 243, 255, 0.1);
+            border-radius: 50%;
+            border: 1px solid rgba(0, 243, 255, 0.3);
+        }
+
+        .card.open .chevron-icon {
+            transform: rotate(180deg);
+            background: var(--neon-cyan);
+            color: #040914;
+        }
+
+        .day-content {
+            display: none;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0, 243, 255, 0.15);
+            margin-top: 15px;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .card.open .day-content { display: block; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .quiz-box {
+            background: rgba(10, 20, 38, 0.9);
+            border: 1px solid rgba(0, 243, 255, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .quiz-title {
+            color: var(--neon-cyan);
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .quiz-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 12px 16px;
+            min-height: 44px;
+            border-radius: 8px;
+            text-align: left;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .quiz-btn:hover {
+            border-color: var(--neon-cyan);
+            background: rgba(0, 243, 255, 0.1);
+        }
+
+        .quiz-btn.correct {
+            border-color: var(--success-green) !important;
+            background: rgba(0, 255, 136, 0.15) !important;
+            color: var(--success-green) !important;
+        }
+
+        .quiz-btn.wrong {
+            border-color: #ff4444 !important;
+            color: #ff6666 !important;
+        }
+
+        .quiz-explain {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: rgba(0, 243, 255, 0.08);
+            border-left: 3px solid var(--neon-cyan);
+            border-radius: 0 8px 8px 0;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            display: none;
+        }
+
+        .quiz-explain.show { display: block; }
+
+        .btn-complete {
+            background: rgba(0, 243, 255, 0.1);
+            border: 1px solid var(--neon-cyan);
+            color: var(--neon-cyan);
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 12px 24px;
+            min-height: 44px;
+            border-radius: 30px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-complete:hover {
+            background: var(--neon-cyan);
+            color: #040914;
+            box-shadow: 0 0 20px var(--neon-cyan);
+        }
+
+        .btn-complete.is-done {
+            background: var(--success-green);
+            border-color: var(--success-green);
+            color: #040914;
+        }
+
+        .cta-card {
+            text-align: center;
+            border: 1px solid var(--neon-cyan);
+            padding: 40px 30px;
+        }
+
+        .btn-switch {
+            background: var(--neon-cyan);
+            color: #040914;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 800;
+            padding: 18px 42px;
+            min-height: 50px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 25px var(--cyan-glow);
+            transition: transform 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .btn-switch:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 35px var(--neon-cyan);
+        }
+
+        .btn-switch.active {
+            background: var(--success-green);
+            box-shadow: 0 0 35px rgba(0, 255, 136, 0.5);
+        }
+
+        .status-msg {
+            font-size: 0.95rem;
+            color: var(--neon-cyan);
+            font-weight: 600;
+            margin-top: 15px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .status-msg.show { opacity: 1; }
+
+        .footer {
+            margin-top: 60px;
+            padding: 40px 20px 30px 20px;
+            text-align: center;
+            border-top: 1px solid var(--card-border);
+            border-radius: 16px 16px 0 0;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-quote {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--neon-cyan);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            text-shadow: 0 0 15px var(--cyan-glow);
+            margin-bottom: 20px;
+        }
+
+        .footer-copyright {
+            font-size: 0.95rem;
+            color: var(--text-white);
+            line-height: 1.6;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .footer-copyright span.author { color: var(--neon-cyan); }
+
+        .footer-legal {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto 20px auto;
+            line-height: 1.5;
+        }
+
+        .footer-contact {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: rgba(0, 243, 255, 0.05);
+            border: 1px solid rgba(0, 243, 255, 0.2);
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: var(--text-main);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer-contact a {
+            color: var(--neon-cyan);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s ease, text-shadow 0.2s ease;
+        }
+
+        .footer-contact a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px var(--neon-cyan);
+        }
+
+        .footer-separator { color: rgba(0, 243, 255, 0.4); }
+
+        /* ============ REBELLION FINAL SCREEN ============ */
+        .rebellion-screen {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(6, 9, 17, 0.97), rgba(0, 0, 0, 0.99));
+            z-index: 9999;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .rebellion-screen.show { display: flex; }
+
+        .rebellion-canvas {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .rebellion-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            color: #fff;
+        }
+
+        .rebellion-title {
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #00f3ff, #00ff88, #ffe14d, #00f3ff);
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow-shift 4s linear infinite;
+            margin-bottom: 12px;
+        }
+
+        @keyframes rainbow-shift {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 300% 50%; }
+        }
+
+        .rebellion-sub {
+            font-size: 1.15rem;
+            color: var(--neon-cyan);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 15px var(--cyan-glow);
+            margin-bottom: 30px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .rebellion-name {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #fff;
+            text-shadow: 0 0 20px var(--neon-cyan);
+            margin-bottom: 8px;
+        }
+
+        .rebellion-line {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            margin-bottom: 26px;
+        }
+
+        .rebellion-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 14px;
+            margin: 28px 0;
+        }
+
+        .rebellion-stat {
+            background: rgba(0, 243, 255, 0.08);
+            border: 1px solid var(--neon-cyan);
+            border-radius: 14px;
+            padding: 18px;
+        }
+
+        .rebellion-stat .label {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .rebellion-stat .value {
+            color: var(--success-green);
+            font-size: 1.8rem;
+            font-weight: 800;
+        }
+
+        .rebellion-stat .unit {
+            color: #fff;
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+
+        .rebellion-quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #fff;
+            border-left: 3px solid var(--success-green);
+            padding: 14px 22px;
+            background: rgba(0, 255, 136, 0.05);
+            margin: 26px auto;
+            max-width: 700px;
+            text-align: left;
+        }
+
+        .rebellion-quote span.author {
+            display: block;
+            margin-top: 8px;
+            font-style: normal;
+            font-weight: 800;
+            color: var(--success-green);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .btn-rebellion {
+            background: var(--success-green);
+            color: #040914;
+            font-size: 1.1rem;
+            font-weight: 800;
+            padding: 16px 38px;
+            min-height: 48px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 25px rgba(0, 255, 136, 0.5);
+            transition: transform 0.2s ease;
+            margin-top: 14px;
+            font-family: inherit;
+        }
+
+        .btn-rebellion:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(0, 255, 136, 0.7);
+        }
+
+        .btn-rebellion.secondary {
+            background: rgba(0, 243, 255, 0.1);
+            color: var(--neon-cyan);
+            border: 1px solid var(--neon-cyan);
+            box-shadow: none;
+            margin-left: 10px;
+        }
+
+        .btn-rebellion.secondary:hover {
+            background: var(--neon-cyan);
+            color: #040914;
+            box-shadow: 0 0 20px var(--cyan-glow);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <div class="container">
+
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div class="tag">
+                <span class="pulse-dot"></span>
+                Schön, dass du da bist
+            </div>
+            <div class="program-phase">Rauchfrei-Rebellion – 21-Tage-Programm</div>
+        </div>
+
+        <!-- Main Header -->
+        <header class="header-title">
+            <h1>Rauchen aufhören in 21 Tagen – <span>Rauchfrei-Rebellion</span></h1>
+            <p class="subtitle">Dein 21-Tage-Plan zum Rauchstopp: täglich 10 Minuten, mit Notfall-Button gegen Suchtdruck, Craving-Tracker und persönlicher Auswertung – direkt im Browser, ohne Anmeldung.</p>
+            <p id="gGreet" style="margin-top:14px;font-weight:700;font-size:1.15rem"></p>
+        </header>
+
+        <!-- Welcome Card -->
+        <div class="card intro-card">
+            <h2>Schön, dass du da bist</h2>
+            <p class="story-p">Diese Seite ist dein persönlicher Begleiter auf dem Weg in ein rauchfreies Leben. Du (und nur du) entscheidest jetzt, dass Schluss ist – nicht morgen, nicht nächste Woche, sondern genau heute. In den nächsten 21 Tagen lernst du deinen Körper, dein Gehirn und deine Gewohnheiten Schritt für Schritt neu kennen. Jede Aufgabe ist klein genug, um sie sofort umzusetzen, und groß genug, um wirklich etwas zu verändern. Du bist keine Versagerin und kein Versager, die oder der „verzichten muss“ – du bist eine Rebellin oder ein Rebell, die oder der sich befreit. Diese Seite hält dir den Spiegel vor, feiert deine Fortschritte und zeigt dir in Echtzeit, was dein Körper und dein Geldbeutel bereits gewonnen haben.</p>
+            <div class="highlight-box">
+                <span class="bold-cyan">Dein Versprechen an dich selbst:</span>
+                Ich übernehme ab heute die Verantwortung (die Regie) für mein Leben. Ich rauche nicht mehr – ich atme, ich lebe, ich bin frei.
+            </div>
+        </div>
+
+        <!-- Wissenschaftlicher Zeitstrahl der Erholung -->
+        <div class="card">
+            <div class="section-header">
+                <div class="icon-wrapper">&#129516;</div>
+                <h3>Wissenschaftlicher Zeitstrahl der Erholung</h3>
+            </div>
+            <p class="story-p">Sobald du aufhörst, beginnt dein Körper sofort mit der Regeneration (mit der Heilung). Die folgenden Zeiten sind wissenschaftlich gut dokumentiert und zeigen dir, was Stunde für Stunde in deinem Inneren passiert. Lies dir diese Punkte immer wieder durch, wenn du schwach wirst – sie sind dein biologischer Beweis, dass jede rauchfreie Minute zählt.</p>
+
+            <div class="timeline-grid">
+                <div class="timeline-item">
+                    <div class="time">&#9201; 20 Minuten</div>
+                    <div class="effect">Dein Puls und dein Blutdruck sinken auf Normalwerte zurück. Deine Hände und Füße werden wieder besser durchblutet (wärmer).</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">&#9201; 8 Stunden</div>
+                    <div class="effect">Der Kohlenmonoxid-Spiegel (ein giftiges Abgas im Rauch) in deinem Blut fällt auf die Hälfte. Dein Sauerstoffgehalt normalisiert sich – dein Körper bekommt wieder richtig Luft.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">&#9201; 24 Stunden</div>
+                    <div class="effect">Das Herzinfarkt-Risiko (die Gefahr für einen Herzinfarkt) beginnt bereits zu sinken. Dein Herz muss nicht mehr gegen die Giftstoffe anarbeiten.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">&#9201; 48 Stunden</div>
+                    <div class="effect">Dein Geruchs- und Geschmackssinn beginnen sich zu erholen. Plötzlich schmecken Lebensmittel wieder intensiver und riechen frischer.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">&#9201; 1 Jahr</div>
+                    <div class="effect">Dein Risiko für eine koronare Herzkrankheit (Verengung der Herzkranzgefäße) sinkt auf die Hälfte eines Rauchers. Du hast dein Herz buchstäblich halbiert geschützt.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">&#9201; 10 Jahre</div>
+                    <div class="effect">Dein Lungenkrebs-Risiko halbiert sich im Vergleich zu einem Raucher. Du hast dein Leben um viele gesunde Jahre verlängert.</div>
+                </div>
+            </div>
+
+            <div class="quote-box">
+                „Der Körper ist das einzige Haus, in dem du wirklich wohnst. Gib auf ihn acht – er hat keine Immobilie, in die er umziehen kann, wenn du ihn ruinierst.“
+                <span class="quote-author">- Rauchfrei-Rebellion</span>
+            </div>
+        </div>
+
+        <!-- Mindset Card -->
+        <div class="card">
+            <div class="section-header">
+                <div class="icon-wrapper">&#129504;</div>
+                <h3>Dein Mindset (deine innere Haltung)</h3>
+            </div>
+            <p class="story-p">Bevor du anfängst, brauchst du die richtige innere Einstellung. Die folgenden vier Grundsätze begleiten dich durch alle 21 Tage und darüber hinaus. Sie sind das Fundament (die Grundmauer) deiner Rebellion.</p>
+
+            <div class="facts-grid">
+                <div class="fact-item">
+                    <h4>1. Es gibt keine Probleme</h4>
+                    <p>Nur Aufgaben, die du Schritt für Schritt löst. Dein Gehirn versucht dir einzureden, dass das Aufhören kompliziert ist – das ist eine Lüge der Sucht. Es ist einfach, wenn du es einfach machst.</p>
+                </div>
+                <div class="fact-item">
+                    <h4>2. Du bist kein Opfer</h4>
+                    <p>Du bist kein „armer Raucher, der leidet“. Du bist eine Rebellin oder ein Rebell, die oder der sich befreit. Diese neue Rolle verändert alles: deine Haltung, deine Energie, dein Blick auf dich selbst.</p>
+                </div>
+                <div class="fact-item">
+                    <h4>3. Der Entzug ist endlich</h4>
+                    <p>Die körperliche Entzugsphase (das „Ziehen“ im Körper) dauert nur wenige Tage. Was bleibt, ist eine alte Gewohnheit – und die kannst du jederzeit ersetzen. Das Schlimmste liegt also hinter dir, nicht vor dir.</p>
+                </div>
+                <div class="fact-item">
+                    <h4>4. Lebe im Jetzt</h4>
+                    <p>Du musst nicht für immer aufhören. Du musst nur diese eine nächste Stunde, diesen einen nächsten Tag gewinnen. Stunde für Stunde, Tag für Tag – so entsteht dein neues Leben.</p>
+                </div>
+            </div>
+
+            <div class="quote-box">
+                „Die Entscheidung, nicht zu rauchen, ist kein Verzicht – sie ist eine Rückeroberung. Du holst dir zurück, was dir die Zigarette gestohlen hat: Zeit, Geld, Atem, Würde.“
+                <span class="quote-author">- Rauchfrei-Rebellion</span>
+            </div>
+        </div>
+
+        <!-- Launch Preparation -->
+        <div class="card">
+            <div class="section-header">
+                <div class="icon-wrapper">&#128640;</div>
+                <h3>Deine Vorbereitung (vier kleine Schritte)</h3>
+            </div>
+            <p class="story-p">Bevor du Tag 1 beginnst, führe diese vier Schritte aus. Sie sind dein Sicherheitsnetz und sorgen dafür, dass du nicht ins Leere startest. Keiner dieser Schritte kostet dich mehr als ein paar Minuten – aber sie machen den Unterschied zwischen Wollen und Tun.</p>
+
+            <ol class="launch-steps">
+                <li>
+                    <h4>Setze deinen Zeitpunkt</h4>
+                    <p>Wähle heute bewusst den Moment, an dem deine letzte Zigarette geraucht wird. Sag dir selbst: „Danach ist Schluss – endgültig.“ Notiere diesen Moment in deinem Kalender oder auf einem Zettel an deinem Spiegel.</p>
+                </li>
+                <li>
+                    <h4>Schaffe dir Verbündete</h4>
+                    <p>Erzähle mindestens drei Menschen aus deinem Umfeld von deinem Plan. Verbündete geben dir Kraft, wenn dein eigener Wille wackelt. Du kannst sie auch heute um ihre Unterstützung bitten.</p>
+                </li>
+                <li>
+                    <h4>Mache reinen Tisch</h4>
+                    <p>Wirf alle Aschenbecher, Feuerzeuge, übrig gebliebene Zigaretten und alles, was an das Rauchen erinnert, in den Müll. Schaffe dir ein sichtbares Umfeld ohne Auslöser (ohne Erinnerungen an die alte Gewohnheit).</p>
+                </li>
+                <li>
+                    <h4>Aktiviere den Schalter</h4>
+                    <p>Tippe unten auf „Ja, ich starte jetzt“. Damit aktivierst du dein 21-Tage-Programm, deine Fortschritts-Anzeige und deine persönliche Auswertung. Ab hier zählt jeder Tag, den du gewinnst.</p>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Personal Profile -->
+        <div class="card">
+            <div class="section-header">
+                <div class="icon-wrapper">&#128100;</div>
+                <h3>Dein persönliches Profil</h3>
+            </div>
+            <p class="story-p">Trage hier deine persönlichen Daten ein. Sie werden ausschließlich lokal in deinem Browser gespeichert und dienen zur Berechnung deiner Statistik. Du kannst sie jederzeit ändern oder löschen.</p>
+
+            <div class="input-grid">
+                <div>
+                    <label for="userName">Dein Name (Vorname)</label>
+                    <input type="text" id="userName" placeholder="z. B. Alex">
+                </div>
+                <div>
+                    <label for="userBirthday">Tag deines Starts (Datum)</label>
+                    <input type="date" id="userBirthday">
+                </div>
+                <div>
+                    <label for="userCigs">Zigaretten pro Tag (Stück)</label>
+                    <input type="number" id="userCigs" min="1" max="200" placeholder="z. B. 24">
+                </div>
+                <div>
+                    <label for="userPrice">Preis pro Schachtel (Euro)</label>
+                    <input type="number" id="userPrice" min="1" max="50" step="0.10" placeholder="z. B. 8.50">
+                </div>
+            </div>
+
+            <button class="btn-save" onclick="saveProfile()">
+                Profil speichern
+                <span>&#128190;</span>
+            </button>
+
+            <div class="metrics-grid" id="metricsGrid">
+                <div class="metric-tile">
+                    <div class="label">Bereits gesparte Zigaretten</div>
+                    <div class="value" id="savedCigsValue">0</div>
+                    <div class="unit">Stück</div>
+                </div>
+                <div class="metric-tile">
+                    <div class="label">Bereits gespartes Geld</div>
+                    <div class="value" id="savedMoneyValue">0,00 &euro;</div>
+                    <div class="unit">Euro</div>
+                </div>
+                <div class="metric-tile">
+                    <div class="label">Gewonnene Lebenszeit</div>
+                    <div class="value" id="daysGainedValue">0</div>
+                    <div class="unit">Tage</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Switch CTA -->
+        <div class="card cta-card">
+            <h3>Bereit? Dann geht es jetzt los</h3>
+            <p class="story-p">Mit einem Tipp startest du dein 21-Tage-Programm. Als Tag 1 gilt das Datum aus deinem Profil (voreingestellt ist heute). Danach öffnet sich jeden Tag automatisch der nächste Tag.</p>
+            <button class="btn-switch" id="switchBtn" onclick="activateTransformation()">
+                <span id="btnText">Ja, ich starte jetzt</span>
+                <span id="btnIcon">&#9889;</span>
+            </button>
+            <div class="status-msg" id="statusMsg">Du bist dabei. Dein 21-Tage-Plan ist freigeschaltet.</div>
+        </div>
+
+        <!-- STICKY PROGRESS BAR -->
+        <div class="progress-sticky">
+            <div class="progress-title-row">
+                <span>&#128203; Dein 21-Tage-Plan</span>
+                <span id="progressText">0 / 21 Tagen abgeschlossen</span>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <!-- DYNAMIC ACCORDION DAYS CONTAINER -->
+        <div id="days-container"></div>
+
+        <section class="card" id="analysis"></section>
+
+        <section class="card" id="faq"><div class="section-header"><div class="icon-wrapper">&#10067;</div><h2 style="font-size:1.3rem">Häufige Fragen zum Rauchstopp</h2></div><h3 style="font-size:1.05rem;margin:16px 0 6px;color:var(--neon-cyan)">Wie lange dauert Suchtdruck (Craving)?</h3><p class="story-p">Eine akute Suchtwelle dauert meist nur wenige Minuten, oft 3 bis 5, und lässt danach von selbst nach. Der Notfall-Button in diesem Programm führt dich mit einem Timer und einer Atemübung durch diese Zeit.</p><h3 style="font-size:1.05rem;margin:16px 0 6px;color:var(--neon-cyan)">Was hilft sofort gegen Suchtdruck?</h3><p class="story-p">Zeit gewinnen und den Ort wechseln: Atemübung (4-7-8), ein Glas Wasser, ein kurzer Spaziergang oder 5 Minuten Ablenkung. Wichtig ist, nicht sofort nachzugeben, sondern die Welle abklingen zu lassen.</p><h3 style="font-size:1.05rem;margin:16px 0 6px;color:var(--neon-cyan)">Was mache ich, wenn ich einen Rückfall habe?</h3><p class="story-p">Ein Ausrutscher ist kein Scheitern. Frage dich, welcher Auslöser dahinterstand, schreibe dir einen neuen Wenn-dann-Plan und starte mit dem Neustart-Button erneut. Wer nach einer Zigarette weitermacht mit dem Aufhören, hat gute Chancen.</p><h3 style="font-size:1.05rem;margin:16px 0 6px;color:var(--neon-cyan)">Du bist hier, weil …</h3><p class="story-p">Du bist hier, weil du dir etwas Gutes tun willst. Weil ein Teil von dir längst weiß, dass du mehr verdienst als Husten am Morgen, Hektik vor der nächsten Pause und das Gefühl, von einer Gewohnheit gesteuert zu werden. Du bist hier, weil du deinem Körper, den Menschen, die dich lieben, und vor allem dir selbst ein neues Kapitel schenken möchtest. Das ist kein kleiner Schritt, das ist Mut. Du musst nicht perfekt sein und nicht alles auf einmal schaffen. Jede Atemübung, jeder Tag und jede überstandene Suchtwelle zählt. Und du gehst diesen Weg nicht allein: Wir begleiten dich, Schritt für Schritt. Schön, dass du da bist.</p><h3 style="font-size:1.05rem;margin:16px 0 6px;color:var(--neon-cyan)">Ersetzt das Programm eine ärztliche Beratung?</h3><p class="story-p">Nein. Bei starker Abhängigkeit, Vorerkrankungen oder Medikamenten sprich bitte mit deiner Hausarztpraxis.</p></section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-quote">
+                „Du gibst nicht etwas auf – du gewinnst alles zurück.“
+            </div>
+            <div class="footer-copyright">
+                &copy; <span class="author">Rauchfrei-Rebellion</span>. Alle Rechte vorbehalten.
+            </div>
+            <div class="f-links"><button type="button" onclick="lgOpen('imp')">Impressum</button><button type="button" onclick="lgOpen('dat')">Datenschutz</button><button type="button" onclick="lgOpen('agb')">Nutzungsbedingungen (AGB)</button><button type="button" onclick="lgOpen('wid')">Widerruf</button><button type="button" onclick="lgOpen('ges')">Gesundheitshinweis</button></div>
+            <div class="footer-legal">
+                Diese Seite dient ausschließlich der persönlichen Motivation und Information. Sie ersetzt keine ärztliche oder psychologische Beratung. Bei gesundheitlichen Fragen oder einer ernsten Suchterkrankung wende dich bitte an deinen Arzt, deine Ärztin oder an eine offizielle Beratungsstelle. Alle Inhalte sind urheberrechtlich geschützt und wurden für deine persönliche Nutzung im Rahmen der Rauchfrei-Rebellion 2027 erstellt.
+            </div>
+            <div class="footer-contact">
+                <a href="mailto:in60tagenrauchfrei@gmail.com">&#128231; E-Mail: in60tagenrauchfrei@gmail.com</a>
+                <span class="footer-separator">|</span>
+                <a href="https://chat.whatsapp.com/Kisnv5LGuvj4WrKadqo98B?mode=gi_t" target="_blank" rel="noopener">&#128172; WhatsApp-Gruppe beitreten</a>
+                <span class="footer-separator">|</span>
+                <a href="#days-container">&#128640; Zu den 21 Tagen</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- ============ REBELLION FINAL SCREEN ============ -->
+    <div class="rebellion-screen" id="rebellionScreen">
+        <canvas class="rebellion-canvas" id="fireworksCanvas"></canvas>
+        <div class="rebellion-content">
+            <div class="rebellion-title">DU HAST ES GESCHAFFT!</div>
+            <div class="rebellion-sub">Deine 21-Tage-Rebellion ist komplett</div>
+
+            <div class="rebellion-name" id="rebellionName">Rebell:in</div>
+            <div class="rebellion-line" id="rebellionLine">Du bist jetzt offiziell rauchfrei – und dein Körper feiert mit dir.</div>
+
+            <div class="rebellion-stats">
+                <div class="rebellion-stat">
+                    <div class="label">Gesparte Zigaretten</div>
+                    <div class="value" id="finalCigs">0</div>
+                    <div class="unit">Stück</div>
+                </div>
+                <div class="rebellion-stat">
+                    <div class="label">Gespartes Geld</div>
+                    <div class="value" id="finalMoney">0,00 &euro;</div>
+                    <div class="unit">Euro</div>
+                </div>
+                <div class="rebellion-stat">
+                    <div class="label">Gewonnene Lebenszeit</div>
+                    <div class="value" id="finalLifeDays">0</div>
+                    <div class="unit">Tage</div>
+                </div>
+            </div>
+
+            <div class="rebellion-quote">
+                „Du hast 21 Tage lang jeden einzelnen Moment gewählt. Du hast gegen eine jahrelange Gewohnheit gewonnen – und gegen Millionen von Nervenzellen, die dir das Gegenteil eingeredet haben. Du bist nicht mehr die Person, die diese Seite heute Morgen aufgerufen hat. Du bist die Person, die morgen aufwacht und einfach atmet – frei, klar, ganz.“
+                <span class="author">- Rauchfrei-Rebellion</span>
+            </div>
+
+            <div>
+                <button class="btn-rebellion" onclick="closeRebellionScreen();openAnalysis()">
+                    &#128214; Meine persönliche Analyse
+                </button>
+                <button class="btn-rebellion secondary" id="btnRestart" onclick="restartTransformation()">
+                    &#128260; Neu starten
+                </button>
+                <button class="btn-rebellion secondary" onclick="closeRebellionScreen()">
+                    Seite schließen
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const daysData = [
+            {
+                day: 1,
+                date: "Sonntag, 27. September 2026",
+                title: "Beobachten und Steuern",
+                aha: "Gut. Deine Ausgangslage zählt: Wie viele Zigaretten rauchst du täglich, und wann kommt die erste? Wir finden im Training heraus, welche Situationen und Gefühle dahinterstecken. Heute geht’s nicht um Perfektion, sondern um Beobachten und Steuern. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Notiere jede Zigarette: Uhrzeit, Situation und Gefühl — Stichworte reichen. Nichts beschönigen, nichts bewerten.<br>2. Verändere eine Rauch-Situation: Räum Zigaretten und Feuerzeug aus deinem direkten Griffbereich und rauch heute mindestens einmal an einem anderen Ort als sonst.<br>3. Lege dein Rauchstopp-Datum fest: Wähle einen Tag innerhalb der nächsten 21 Tage und schreib ihn hier auf. Wir machen daraus einen konkreten Plan, statt es dem „irgendwann“ zu überlassen.",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN ich nervös werde und eine Zigarette will, DANN lege ich Zigarette und Feuerzeug außer Reichweite, trinke Wasser, atme langsam aus und wechsle für zwei Minuten den Ort oder die Tätigkeit.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck gerade: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: noch nicht begonnen — wann war deine letzte Zigarette?<br><br>Abschluss & Reflexion:<br>Welcher rote Faden könnte dir dabei wichtig sein — zum Beispiel Ruhe, Freiheit oder Gesundheit?<br><br>Morgen zuerst: Schau dir deine Notizen des Tages an.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 2,
+                title: "Brauchbare Daten sammeln",
+                date: "Montag, 28. September 2026",
+                aha: "Weiter. Heute sammeln wir keine Schuldgefühle, sondern brauchbare Daten: Jeder Raucher hat seine typischen Auslöser (Stress, Kaffee, Pausen, Alkohol). Wir schauen uns an, wann deine auftauchen und was du stattdessen tun kannst. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Bei den nächsten drei Zigaretten notiere kurz: Uhrzeit, was gerade los war und wie nervös du dich fühltest — von 0 bis 10.<br>2. Verschiebe eine Zigarette um 10 Minuten. In der Zeit: Wasser trinken, langsam ausatmen und kurz den Ort oder die Tätigkeit wechseln. Danach notierst du, was mit dem Suchtdruck passiert ist.<br>3. Wähle dein Rauchstopp-Datum innerhalb der 21 Tage und schreib es auf. Wenn du noch nicht bereit bist, sag genau, was dich daran bremst — das ist Trainingsmaterial, kein Urteil.",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN ich nervös werde und rauchen möchte, DANN lege ich Zigarette und Feuerzeug außer Reichweite, trinke Wasser und wechsele zwei Minuten lang Ort oder Tätigkeit. Dann bewerte ich den Suchtdruck erneut von 0 bis 10.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: wie lange — oder rauchst du im Moment noch?<br><br>Abschluss & Reflexion:<br>Was hast du gestern über den Moment vor dem Rauchen bemerkt?<br><br>Morgen zuerst: Schau nach, in welcher Situation dein Suchtdruck am stärksten war.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 3,
+                title: "Den Moment vor der Zigarette erkennen",
+                date: "Dienstag, 29. September 2026",
+                aha: "Weiter. Heute üben wir, den Moment vor der Zigarette zu erkennen — besonders in Stressmomenten. Kein Drama, kein Raten: Wir sammeln Hinweise und steuern den nächsten Schritt. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Bei den nächsten drei Zigaretten notiere: Was war gerade los? Was hast du gefühlt? Suchtdruck von 0 bis 10?<br>2. Verschiebe eine Zigarette um 10 Minuten. In der Zeit: Zigarette und Feuerzeug außer Reichweite, Wasser trinken, langsam ausatmen und kurz den Ort wechseln. Danach Suchtdruck erneut bewerten.<br>3. Entscheide dich für ein Rauchstopp-Datum innerhalb deines 21-Tage-Plans — oder schreib auf, was dich noch davon abhält. Beides ist nützliche Information.",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Plan:<br>WENN ich nervös werde und rauchen möchte, DANN bringe ich Zigarette und Feuerzeug außer Reichweite, trinke Wasser, wechsle kurz den Ort und prüfe den Suchtdruck nach fünf Minuten erneut.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: wie lange — oder rauchst du gerade noch?<br><br>Abschluss & Reflexion:<br>Was ging deiner letzten Zigarette unmittelbar voraus?<br><br>Morgen zuerst: Schau dir deine Notizen an und markiere deinen stärksten Auslöser.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 4,
+                title: "Dein Cockpit reinigen",
+                date: "Mittwoch, 30. September 2026",
+                aha: "Dein Körper ist keine Verbrennungsanlage, sondern dein einziges Cockpit. Heute entziehen wir dem Reflex-Rauchen die physische Grundlage in deinen eigenen vier Wänden. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Räume alle Aschenbecher, Feuerzeuge und Not-Zigaretten aus deiner Wohnung und deinem Auto unzugänglich weg.<br>2. Lüfte alle Wohnräume gründlich und wasche mindestens ein Kleidungsstück, das nach Rauch riecht.<br>3. Putze dir nach jeder Hauptmahlzeit sofort gründlich die Zähne oder nutze ein starkes Mundwasser für eine frische Mundflora.",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN nach dem Essen der automatische Impuls zum Rauchen kommt, DANN gehe ich sofort ins Badezimmer, putze mir die Zähne und trinke ein großes Glas kaltes Wasser.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: wie lange — oder wann steht dein Ausstiegspunkt genau?<br><br>Abschluss & Reflexion:<br>Welches Gefühl stellt sich ein, wenn dein gewohnter Rauch-Ort plötzlich sauber und frei ist?<br><br>Morgen zuerst: Trinke direkt nach dem Aufstehen ein Glas frisches Wasser.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 5,
+                title: "Biochemie der Entspannung (4-7-8)",
+                date: "Donnerstag, 1. Oktober 2026",
+                aha: "Wir schalten heute dein Nervensystem von Alarm auf Erholung um. Stress ist oft nichts anderes als ein abgesenkter Nikotinspiegel – wir ersetzen das Gift durch reine Biochemie. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Lerne und nutze die 4-7-8-Atemtechnik: 4 Sekunden durch die Nase einatmen, 7 Sekunden halten, 8 Sekunden langsam durch den Mund ausatmen.<br>2. Führe diese Atemübung heute mindestens dreimal durch – völlig unabhängig davon, ob du Suchtdruck spürst oder nicht.<br>3. Trinke über den Tag verteilt mindestens 2 Liter kühles Wasser, um den körperlichen Entgiftungsprozess zu beschleunigen.",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN Stress oder körperliche Unruhe aufsteigen, DANN starte ich sofort 3 Durchgänge der 4-7-8-Atmung und trinke anschließend ein Glas Wasser.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: Stand in Stunden/Tagen?<br><br>Abschluss & Reflexion:<br>Wie reagiert dein Puls, wenn du 8 Sekunden lang bewusst ausatmest?<br><br>Morgen zuerst: Mache direkt nach dem Aufwachen 3 tief verlangsamte Atemzüge.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 6,
+                title: "Unabhängigkeit messbar machen",
+                date: "Freitag, 2. Oktober 2026",
+                aha: "Heute machen wir deine Unabhängigkeit schwarz auf weiß messbar. Geld ist gespeicherte Lebensenergie – hören wir auf, sie zu verbrennen. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Rechne deine genauen monatlichen und jährlichen Ausgaben für Zigaretten auf einem Zettel aus.<br>2. Richte ein physisches Sparglas oder ein separates Unterkonto auf deiner Banking-App ein.<br>3. Zahle den Betrag, den du bisher an einem Tag verraucht hast, noch heute dort ein.",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN ich an der Kasse oder Tankstelle den Impuls spüre, Schachteln zu kaufen, DANN überweise ich den Kaufpreis sofort auf mein Sparkonto.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: exakter Stand?<br><br>Abschluss & Reflexion:<br>Welches konkrete Ziel oder welches Erlebnis wirst du dir von dem gesparten Geld in 6 Monaten erfüllen?<br><br>Morgen zuerst: Wirf einen Blick auf dein neues Sparkonto.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 7,
+                title: "Identitätswechsel & Wochen-Reflexion",
+                date: "Samstag, 3. Oktober 2026",
+                aha: "Erste Trainingswoche absolviert. Ab heute verändern wir deine Identität: Du bist kein \"Raucher auf Entzug\", sondern ein freier Mensch, der nicht mehr raucht. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Blicke morgens in den Spiegel und sage laut zu dir: „Ich verhandle nicht mehr. Ich bin Nichtraucher.“<br>2. Schreibe die drei wichtigsten Gründe für deine Rauchfreiheit auf eine kleine Karte.<br>3. Belohne dich heute bewusst mit einer kleinen Aktivität für deinen Einsatz in den ersten 7 Tagen.",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN Zweifel oder Selbstmitleid aufkommen („Ich verzichte auf etwas“), DANN lese ich meine Karte mit den drei Hauptgründen durch und erinnere mich an meine Freiheit.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: aktueller Stand?<br><br>Abschluss & Reflexion:<br>In welcher Situation der letzten Woche hast du bereits bewiesen, dass du das System steuern kannst?<br><br>Morgen zuerst: Lese deine Karte mit den Hauptgründen direkt nach dem Aufstehen.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 8,
+                title: "Wochenend-Muster durchbrechen",
+                date: "Sonntag, 4. Oktober 2026",
+                aha: "Wir starten in Woche 2: Die körperliche Hauptwelle flacht ab, jetzt stellen wir die mentalen Weichen gegen Automatismus. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Analysiere deine Rauchgewohnheiten am Wochenende: Welche Situation war die gefährlichste?<br>2. Ersetze die typische \"Entspannungs-Zigarette\" am Nachmittag durch einen Spaziergang oder eine Tasse Tee.<br>3. Entsorge eine letzte versteckte Packung oder ein vergessenes Feuerzeug, falls noch irgendwo etwas liegt.",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN am Wochenende Langeweile oder Leerlauf aufkommt, DANN stehe ich auf und gehe für 10 Minuten ohne Ablenkung an die frische Luft.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: aktueller Stand?<br><br>Abschluss & Reflexion:<br>Wie fühlst du dich, wenn du merkst, dass Langeweile auch ohne Rauch vergeht?<br><br>Morgen zuerst: Plane deinen morgigen Arbeitstag oder Ablauf rauchfrei vor.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 9,
+                title: "Die Craving-Welle surfen",
+                date: "Montag, 5. Oktober 2026",
+                aha: "Jeder Suchtdruck folgt einer biochemischen Kurve: Er steigt an, erreicht eine Spitze und fällt nach 3 bis 5 Minuten wieder ab. Wir lernen heute, diese Welle auszureiten. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Wenn Suchtdruck auftaucht: Starte sofort den Timer auf deinem Smartphone auf exakt 5 Minuten.<br>2. Schaue dem Verlangen während dieser 5 Minuten wie ein distanzierter Beobachter zu.<br>3. Notiere nach Ablauf der Zeit, auf welchen Wert (0–10) der Druck gesunken ist.",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN eine Suchtwelle anrollt, DANN stelle ich den 5-Minuten-Timer, trinke langsam Wasser und schaue dem Impuls zu, bis er nachlässt.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                quiz: {
+                    question: "Wie lange dauert eine akute Craving-Welle im Gehirn im Durchschnitt, wenn man sie nicht durch Gedanken füttert?",
+                    options: ["A. 3–5 Minuten", "B. 15–20 Minuten", "C. 1 Stunde", "D. Den ganzen Tag"],
+                    correct: 0,
+                    explain: "Richtig! Eine Craving-Welle dauert meist nur 3–5 Minuten und flacht danach von selbst ab."
+                },
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: aktueller Stand?<br><br>Abschluss & Reflexion:<br>Hat die Welle heute nach den 5 Minuten an Intensität verloren?<br><br>Morgen zuerst: Erinnere dich daran, dass jede Welle von alleine bricht.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 10,
+                title: "Zukunftsvisualisierung",
+                date: "Dienstag, 6. Oktober 2026",
+                aha: "Dein Gehirn baut sich kontinuierlich um. Jedes Mal, wenn du einem Impuls nicht nachgibst, schwächst du die alte Nervenbahn ab. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Führe eine 1-minütige Zukunftsvisualisierung durch: Sieht dich in 1 Jahr als gesunden, vitalen Nichtraucher.<br>2. Notiere 2 Punkte: (a) Was ist an deinem Alltag besser? (b) Welche neue Gewohnheit macht das möglich?<br>3. Verankere dieses Positivbild mit einem tiefen Ausatmen.",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN der Gedanke aufkommt „Ich würde jetzt gerne rauchen“, DANN rufe ich sofort mein Zukunfts-Bild von mir in 1 Jahr auf.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: Tage/Stunden?<br><br>Abschluss & Reflexion:<br>Welche Eigenschaft an deinem zukünftigen rauchfreien Ich gefällt dir am besten?<br><br>Morgen zuerst: Erinnere dich morgens an deine Vision für in 1 Jahr.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 11,
+                title: "Die 4-A-Methode anwenden",
+                date: "Mittwoch, 7. Oktober 2026",
+                aha: "Sicherheitssystem aktivieren: Die 4-A-Methode ist dein Werkzeug für Akutsituationen. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Präge dir die 4 A's ein: Aufschieben, Ausweichen, Abhauen, Ablenken.<br>2. Schreibe diese 4 A's auf einen kleinen Zettel oder erstelle einen Screenshot als Smartphone-Hintergrund.<br>3. Wende mindestens eines der A's heute bei der ersten aufkommenden Unruhe bewusst an.",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN eine unerwartete Stress-Situation entsteht, DANN nutze ich sofort die 4-A-Regel: Ort wechseln, kurz ausweichen und mit Bewegung ablenken.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: aktueller Stand?<br><br>Abschluss & Reflexion:<br>Welches der 4 A's fällt dir am leichtesten?<br><br>Morgen zuerst: Überprüfe, ob deine 4-A-Notfallkarte griffbereit ist.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 12,
+                title: "Umfeld einbinden",
+                date: "Donnerstag, 8. Oktober 2026",
+                aha: "Wir binden dein Umfeld ein. Eine klare Kommunikation schützt dich vor unüberlegten Angeboten anderer. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Informiere mindestens zwei nahestehende Personen darüber, dass du ab jetzt Nichtraucher bist und keine Ausnahmen machst.<br>2. Bitte sie aktiv darum, dir unter keinen Umständen Zigaretten anzubieten oder zu überlassen.<br>3. Trainiere deine Standard-Antwort für Angebote: „Nein danke, ich rauche nicht.“",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN mir jemand eine Zigarette anbietet, DANN antworte ich ohne zu zögern: „Nein danke, ich bin Nichtraucher.“<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: Stand in Tagen?<br><br>Abschluss & Reflexion:<br>Wie fühlt es sich an, den Satz „Ich bin Nichtraucher“ klar auszusprechen?<br><br>Morgen zuerst: Erinnere dich an deine klare Haltung gegenüber deinem Umfeld.<br>Was meinst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 13,
+                title: "Entspannung auf Hieb",
+                date: "Freitag, 9. Oktober 2026",
+                aha: "Entspannung auf Anhib: Wenn der Körper unter Spannung steht, sucht das Gehirn nach alten Fluchtwegen. Wir nutzen heute die gezielte Muskelentspannung. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Spanne deine Schultern und Hände für 5 Sekunden maximal fest an.<br>2. Lasse schlagartig los und atme langsam über 8 Sekunden aus.<br>3. Wiederhole diese Übung dreimal hintereinander, wenn du Unruhe spürst.",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN körperliche Anspannung steigt, DANN spanne ich meine Muskeln für 5 Sekunden an, lasse bewusst los und atme tief aus.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: aktueller Stand?<br><br>Abschluss & Reflexion:<br>Wo in deinem Körper sitzt Anspannung zuerst – und wie fühlt sich das Entspannen an?<br><br>Morgen zuerst: Spanne kurz nach dem Aufstehen einmal die Schultern an und lasse sie locker.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 14,
+                title: "Die Illusion der „einen Einzigen“",
+                date: "Samstag, 10. Oktober 2026",
+                aha: "Zwei Wochen geschafft! Heute schalten wir die gefährlichste Falle aus: Die Illusion der „einen Einzigen“. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Mache dir bewusst: Es gibt biologisch keine \"nur eine Zigarette\" – ein einziger Zug reaktiviert unweigerlich die Nikotinrezeptoren im Gehirn.<br>2. Schreibe auf ein Blatt: „Ich verhandle nicht mit meiner Sucht.“<br>3. Feiere deinen 14-Tage-Erfolg mit einem alkoholfreien Lieblingsgetränk oder einer guten Mahlzeit.",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN der leise Gedanke kommt „Nur eine einzige zur Belohnung“, DANN sage ich sofort laut: „Es gibt keine einzelne Zigarette. Ich verhandle nicht.“<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: exakt 14 Tage / dein Stand?<br><br>Abschluss & Reflexion:<br>Welcher Versuchung der letzten 14 Tage bist du am stolzesten widerstanden?<br><br>Morgen zuerst: Lese deinen Satz „Ich verhandle nicht mit meiner Sucht“.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 15,
+                title: "Die Zielgerade (Tage 15–21)",
+                date: "Sonntag, 11. Oktober 2026",
+                aha: "Wir starten in die Zielgerade (Tage 15–21): Absicherung, Zukunftsplan und dauerhafte Stabilisierung. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Identifiziere deine typische Gewohnheit am Sonntagmorgen oder -abend.<br>2. Verändere den Ablauf bewusst (z. B. erst Duschen, dann Kaffee, an einem anderen Platz sitzen).<br>3. Gehe nach dem Mittag- oder Abendessen direkt für 5 Minuten an die frische Luft.",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN nach dem Essen die alte Routine greifen will, DANN stehe ich sofort vom Tisch auf und gehe für 5 Minuten nach draußen.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: aktueller Stand?<br><br>Abschluss & Reflexion:<br>Wie leicht fällt es dir inzwischen, feste Abläufe im Alltag zu verändern?<br><br>Morgen zuerst: Starte den Tag mit deiner neuen Morgenroutine.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 16,
+                title: "Das Stopp-Signal für Gedanken",
+                date: "Montag, 12. Oktober 2026",
+                aha: "Unterbreche den Gedankenstrom. Wenn Gedanken kreisen, schalten wir sie mit einem klaren Signal ab. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Bestimme ein klares, rechnerisches Stopp-Signal (z. B. laut oder leise das Wort „STOPP! NEU! JETZT!“ sagen).<br>2. Wechsel bei jedem Suchtgedanken sofort den Raum oder deine Körperhaltung.<br>3. Trinke direkt nach der Unterbrechung 3 Schlucke kaltes Wasser.",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN ein Suchtgedanke im Kopf kreist, DANN sage ich innerlich „STOPP!“, wechsele die Position und trinke Wasser.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: aktueller Stand?<br><br>Abschluss & Reflexion:<br>Wie schnell lässt sich ein Gedanke unterbrechen, wenn du körperlich die Position wechselst?<br><br>Morgen zuerst: Wende das Stopp-Signal beim ersten unruhigen Gedanken direkt an.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 17,
+                title: "Daten lügen nicht",
+                date: "Dienstag, 13. Oktober 2026",
+                aha: "Daten lügen nicht. Schauen wir uns an, was du deinem Körper bereits erspart hast. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Berechne, wie viele Zigaretten du seit deinem Stopp-Datum nicht geraucht hast.<br>2. Berechne die gewonnene Lebenszeit (ca. 11 Minuten pro nicht gerauchter Zigarette).<br>3. Notiere 3 körperliche Veränderungen, die du bereits bemerkst (Atem, Geschmack, Puls, Geruch).",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN ich mich müde oder schwach fühle, DANN schaue ich auf meine Erfolgszahlen und die gewonnene Lebenszeit.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: Stand in Tagen?<br><br>Abschluss & Reflexion:<br>Welche Zahl deiner Bilanz beeindruckt dich am meisten?<br><br>Morgen zuerst: Rufe dir deine gesparten Zigaretten ins Gedächtnis.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 18,
+                title: "Belastung & Stressphasen meistern",
+                date: "Mittwoch, 14. Oktober 2026",
+                aha: "Sozialer Druck & Stressphasen. Wir stellen sicher, dass du auch unter Belastung standhältst. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Überlege, welche stressige Situation in den nächsten zwei Wochen ansteht.<br>2. Entwirf für genau diese Situation einen konkreten Handlungsablauf ohne Rauchpause.<br>3. Meide heute gezielt Orte, an denen Rauchernormen vorherrschen (z. B. typische Raucherinseln vor Gebäuden).",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN stressige Arbeitsphasen auftreten, DANN nutze ich eine 3-minütige Atem- und Trinkpause statt einer Rauchpause.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: aktueller Stand?<br><br>Abschluss & Reflexion:<br>Wie kannst du echte Erholung im Alltag finden, ohne Gifte zuzuführen?<br><br>Morgen zuerst: Plane deine Pausen für den Tag im Voraus.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 19,
+                title: "Emotionale Unabhängigkeit",
+                date: "Donnerstag, 15. Oktober 2026",
+                aha: "Emotionale Unabhängigkeit. Wir lernen, Gefühle zuzulassen, ohne sie mit Nikotin zu betäuben. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Wenn ein negatives Gefühl auftaucht (Frust, Ärger, Unruhe): Benenne es klar beim Namen („Ich spüre gerade Ärger“).<br>2. Akzeptiere das Gefühl für 60 Sekunden, ohne nach einer Lösung oder Substanzen zu greifen.<br>3. Entlade die Emotion durch eine kurze Bewegung (z. B. 10 Zügige Schritte, Treppensteigen, Hände ausschütteln).",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN ich Frust oder Ärger spüre, DANN benenne ich die Emotion laut und entlade sie sofort durch zügige Bewegung.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: aktueller Stand?<br><br>Abschluss & Reflexion:<br>Welches Gefühl hast du bisher am häufigsten mit Nikotin überdeckt?<br><br>Morgen zuerst: Achte bewusst darauf, Gefühle wahrzunehmen, statt sie wegzudrücken.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 20,
+                title: "Das Notfall-System für die Zukunft",
+                date: "Freitag, 16. Oktober 2026",
+                aha: "Vorbereitung auf den Langzeit-Erfolg. Dein Notfall-System nach Tag 21. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Schreibe dein Notfall-Protokoll für unerwartete Krisen auf (1. Atmen, 2. Wasser, 3. Ort wechseln, 4. Notfallkontakt).<br>2. Bestimme eine Person oder diesen Chat als dauerhafte Anlaufstelle, falls du je ins Schwanken gerätst.<br>3. Plane deine große Belohnung für das Erreichen von Tag 21 morgen.",
+                action: "Hindernis / Risiko:<br>Was ist heute dein größtes Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan:<br>WENN eine extreme Notfallsituation eintritt, DANN arbeite ich mein 4-Schritte-Notfallprotokoll streng Punkt für Punkt ab.<br><br>Merksatz: „Ein Verlangen ist unangenehm, mehrere Minuten zu warten schadet mir nicht. Ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: kurz vor der 21-Tage-Marke?<br><br>Abschluss & Reflexion:<br>Wie sicher fühlst du dich mit deinem Notfall-Protokoll?<br><br>Morgen zuerst: Bereite dich auf deinen finalen Transformationstag vor.<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            },
+            {
+                day: 21,
+                title: "Dein neues rauchfreies Leben",
+                date: "Samstag, 17. Oktober 2026",
+                aha: "21 Tage absolviert. Dein Fundament steht, dein System läuft. Du hast bewiesen, dass du die Steuerung über dein Verhalten hast. Heute zählen die nächsten 10 Minuten.",
+                neuro: "Deine 3 Aufgaben für heute:<br>1. Sprich das Identitäts-Commitment laut aus: „Ich bin frei. Ich bin Nichtraucher. Ich verhandle nie mehr.“<br>2. Überweise dein angespartes Geld der letzten 21 Tage auf dein Belohnungskonto oder löse deine Wunscherfüllung ein.<br>3. Erstelle deinen langfristigen Rückfallpräventions-Plan für die nächsten 3 Monate (Stress, Feiern, Urlaube).",
+                action: "Hindernis / Risiko:<br>Was ist ab morgen dein größtes Langzeit-Rückfallrisiko?<br><br>Vorläufiger Wenn-dann-Plan (für die Zukunft):<br>WENN in Zukunft in schwierigen Phasen Suchtgedanken auftauchen, DANN erinnere ich mich daran, dass ich mein System 21 Tage lang erfolgreich gesteuert habe und nutze sofort meine Umleitung.<br><br>Merksatz: „Ein Verlangen ist unangenehm, aber ich muss ihm nicht folgen.“<br>Fahrschul-Realitätscheck: Nicht die Zigarette löst es. Die Umleitung löst es.",
+                checkin: "Mini-Check-in:<br>• Suchtdruck: 0–10?<br>• Stimmung: ein Wort?<br>• Rauchfreie Zeit: 21 TAGE ERFOLGREICH GEMEISTERT.<br><br>Abschluss & Reflexion:<br>Was ist die wertvollste Erkenntnis, die du über dich selbst in den letzten 21 Tagen gewonnen hast?<br><br>Dein Satz für die Zukunft: „Ich bleibe auf meinem Kurs. Ich bin Nichtraucher.“<br>Was machst du als Nächstes — jetzt — für die nächsten 10 Minuten?"
+            }
+        ];
+
+        // System State
+        let isActivated = false;
+        let completedDays = [];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProfile();
+            loadState();
+            renderDays();
+            updateProgress();
+            calculateMetrics();
+        });
+
+        function todayISO() {
+            const t = new Date();
+            return t.getFullYear() + '-' + String(t.getMonth() + 1).padStart(2, '0') + '-' + String(t.getDate()).padStart(2, '0');
+        }
+        function dayLabel(n) {
+            const s = localStorage.getItem('rr_start') || todayISO();
+            const d = new Date(s + 'T00:00:00');
+            d.setDate(d.getDate() + n - 1);
+            return d.toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+        }
+        function startISO() { return localStorage.getItem('rr_start') || todayISO(); }
+        function dayDate(n) { const d = new Date(startISO() + 'T00:00:00'); d.setDate(d.getDate() + n - 1); return d; }
+        function isDayUnlocked(n) { return new Date(todayISO() + 'T00:00:00') >= dayDate(n); }
+        function currentDay() {
+            let c = 0;
+            for (let n = 1; n <= 21; n++) if (isDayUnlocked(n)) c = n;
+            return Math.max(1, c);
+        }
+
+        function loadProfile() {
+            const name = localStorage.getItem('rr_name') || '';
+            const startDate = localStorage.getItem('rr_start') || todayISO();
+            const cigs = localStorage.getItem('rr_cigs') || '24';
+            const price = localStorage.getItem('rr_price') || '8.50';
+
+            document.getElementById('userName').value = name;
+            document.getElementById('userBirthday').value = startDate;
+            document.getElementById('userCigs').value = cigs;
+            document.getElementById('userPrice').value = price;
+        }
+
+        function saveProfile() {
+            const name = document.getElementById('userName').value;
+            const startDate = document.getElementById('userBirthday').value;
+            const cigs = document.getElementById('userCigs').value;
+            const price = document.getElementById('userPrice').value;
+
+            localStorage.setItem('rr_name', name);
+            localStorage.setItem('rr_start', startDate);
+            localStorage.setItem('rr_cigs', cigs);
+            localStorage.setItem('rr_price', price);
+
+            calculateMetrics();
+            renderDays();
+            alert('Profil erfolgreich gespeichert!');
+        }
+
+        function loadState() {
+            isActivated = localStorage.getItem('rr_active') === 'true';
+            completedDays = JSON.parse(localStorage.getItem('rr_completed') || '[]');
+
+            const btn = document.getElementById('switchBtn');
+            const msg = document.getElementById('statusMsg');
+            if (isActivated) {
+                btn.classList.add('active');
+                document.getElementById('btnText').innerText = 'Du bist dabei';
+                document.getElementById('btnIcon').innerHTML = '&#10004;';
+                msg.classList.add('show');
+            }
+        }
+
+        function activateTransformation() {
+            isActivated = true;
+            localStorage.setItem('rr_active', 'true');
+            const startField = document.getElementById('userBirthday').value || todayISO();
+            localStorage.setItem('rr_start', startField);
+            localStorage.setItem('rr_name', document.getElementById('userName').value);
+            localStorage.setItem('rr_cigs', document.getElementById('userCigs').value || '24');
+            localStorage.setItem('rr_price', document.getElementById('userPrice').value || '8.50');
+
+            const btn = document.getElementById('switchBtn');
+            const msg = document.getElementById('statusMsg');
+            btn.classList.add('active');
+            document.getElementById('btnText').innerText = 'Du bist dabei';
+            document.getElementById('btnIcon').innerHTML = '&#10004;';
+            msg.classList.add('show');
+
+            renderDays();
+            calculateMetrics();
+            
+            const cur = document.getElementById('day-card-' + currentDay());
+            if (cur && isDayUnlocked(currentDay())) cur.classList.add('open');
+            const target = (cur && isDayUnlocked(currentDay())) ? cur : document.getElementById('days-container');
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (window.hToast) hToast(isDayUnlocked(1) ? 'Los geht’s! Tag 1 ist offen 🚀' : 'Alles klar! Tag 1 öffnet sich am ' + dayLabel(1) + '.');
+        }
+
+        function renderDays() {
+            const container = document.getElementById('days-container');
+            container.innerHTML = '';
+
+            daysData.forEach((item) => {
+                const isCompleted = completedDays.includes(item.day);
+                const isLocked = !isActivated || !isDayUnlocked(item.day);
+                const waitsForDate = isActivated && !isDayUnlocked(item.day);
+
+                const card = document.createElement('div');
+                card.className = `card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}`;
+                card.id = `day-card-${item.day}`;
+
+                let quizHtml = '';
+                if (item.quiz) {
+                    quizHtml = `
+                        <div class="quiz-box">
+                            <div class="quiz-title">
+                                <span>&#129504;</span> Wissens-Check Tag ${item.day}
+                            </div>
+                            <div class="quiz-options">
+                                ${item.quiz.options.map((opt, idx) => `
+                                    <button class="quiz-btn" onclick="checkQuiz(${item.day},${idx}, ${item.quiz.correct}, this)">${opt}</button>
+                                `).join('')}
+                            </div>
+                            <div class="quiz-explain" id="quiz-exp-${item.day}">
+                                ${item.quiz.explain || 'Richtig!'}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                card.innerHTML = `
+                    <div class="day-header" onclick="toggleDay(${item.day}, ${isLocked})">
+                        <div class="day-header-left">
+                            <span class="day-badge">Tag ${item.day}</span>
+                            <span class="day-title-preview">${item.title}</span>
+                        </div>
+                        <div class="day-header-right">
+                            <span class="phase-tag">${waitsForDate ? '&#128274; öffnet am ' : ''}${dayLabel(item.day)}</span>
+                            <div class="chevron-icon">&#9660;</div>
+                        </div>
+                    </div>
+                    <div class="day-content" id="day-content-${item.day}">
+                        <p class="story-p"><strong>Ausgangslage & Impuls:</strong><br>${item.aha}</p>
+                        
+                        <div class="neuro-box">
+                            <h5><span>&#128203;</span> Deine Aufgaben für heute</h5>
+                            <p class="story-p" style="margin-bottom:0; font-size:0.95rem;">${item.neuro}</p>
+                        </div>
+
+                        <div class="action-box">
+                            <h5><span>&#9888;</span> Risiko & Wenn-dann-Plan</h5>
+                            <p style="font-size:0.95rem; color:#e2e8f0;">${item.action}</p>
+                        </div>
+
+                        <div class="neuro-box" style="margin-top:15px; border-color: rgba(255, 225, 77, 0.3);">
+                            <h5 style="color: var(--accent-yellow);"><span>&#128221;</span> Check-in & Reflexion</h5>
+                            <p class="story-p" style="margin-bottom:0; font-size:0.95rem;">${item.checkin}</p>
+                        </div>
+
+                        ${quizHtml}
+
+                        ${journalHtml(item.day)}
+
+                        <button class="btn-complete ${isCompleted ? 'is-done' : ''}" onclick="toggleComplete(${item.day})">
+                            ${isCompleted ? '&#10004; Tag abgeschlossen' : 'Als abgeschlossen markieren'}
+                        </button>
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        function toggleDay(dayNum, isLocked) {
+            if (isLocked) {
+                const msg = !isActivated
+                    ? 'Tippe zuerst auf „Ja, ich starte jetzt“, dann öffnet sich dein Plan.'
+                    : 'Dieser Tag öffnet sich am ' + dayLabel(dayNum) + '. Freu dich schon darauf 🙂';
+                if (window.hToast) hToast(msg); else alert(msg);
+                return;
+            }
+
+            const card = document.getElementById(`day-card-${dayNum}`);
+            const wasOpen = card.classList.contains('open');
+
+            // Close all
+            document.querySelectorAll('.card').forEach(c => c.classList.remove('open'));
+
+            if (!wasOpen) {
+                card.classList.add('open');
+            }
+        }
+
+        function toggleComplete(dayNum) {
+            const index = completedDays.indexOf(dayNum);
+            if (index > -1) {
+                completedDays.splice(index, 1);
+            } else {
+                completedDays.push(dayNum);
+            }
+
+            localStorage.setItem('rr_completed', JSON.stringify(completedDays));
+            renderDays();
+            updateProgress();
+            calculateMetrics();
+
+            if (completedDays.length === 21) {
+                showRebellionScreen();
+            }
+        }
+
+        function checkQuiz(dayNum, selectedIdx, correctIdx, btn) {
+            const parent = btn.parentElement;
+            const buttons = parent.querySelectorAll('.quiz-btn');
+            
+            buttons.forEach(b => b.classList.remove('correct', 'wrong'));
+
+            if (selectedIdx === correctIdx) {
+                btn.classList.add('correct');
+            } else {
+                btn.classList.add('wrong');
+                buttons[correctIdx].classList.add('correct');
+            }
+
+            const exp = document.getElementById(`quiz-exp-${dayNum}`);
+            if (exp) exp.classList.add('show');
+        }
+
+        function updateProgress() {
+            const count = completedDays.length;
+            const percentage = Math.round((count / 21) * 100);
+
+            document.getElementById('progressText').innerText = `${count} / 21 Tagen abgeschlossen (${percentage}%)`;
+            document.getElementById('progressFill').style.width = `${percentage}%`;
+        }
+
+        function calculateMetrics() {
+            const cigsPerDay = parseFloat(document.getElementById('userCigs').value) || 24;
+            const packPrice = parseFloat(document.getElementById('userPrice').value) || 8.50;
+            const startDateStr = document.getElementById('userBirthday').value;
+
+            let daysActive = isActivated ? completedDays.length : 0;
+
+            if (startDateStr && isActivated) {
+                const start = new Date(startDateStr);
+                const today = new Date();
+                const diffTime = today - start;
+                const diffDays = diffTime < 0 ? 0 : Math.max(1, Math.ceil(diffTime / (1000 * 60 * 60 * 24)));
+                daysActive = Math.max(completedDays.length, diffDays);
+            }
+
+            const totalCigsSaved = Math.round(daysActive * cigsPerDay);
+            const pricePerCig = packPrice / 20; // 20 Zigaretten pro Schachtel
+            const totalMoneySaved = (totalCigsSaved * pricePerCig).toFixed(2);
+            
+            // 11 Minuten Lebenszeit pro Zigarette
+            const minutesGained = totalCigsSaved * 11;
+            const daysGained = (minutesGained / (24 * 60)).toFixed(1);
+
+            document.getElementById('savedCigsValue').innerText = totalCigsSaved.toLocaleString('de-DE');
+            document.getElementById('savedMoneyValue').innerHTML = `${totalMoneySaved.replace('.', ',')} &euro;`;
+            document.getElementById('daysGainedValue').innerText = daysGained.replace('.', ',');
+
+            // For Final Screen
+            document.getElementById('finalCigs').innerText = totalCigsSaved.toLocaleString('de-DE');
+            document.getElementById('finalMoney').innerHTML = `${totalMoneySaved.replace('.', ',')} &euro;`;
+            document.getElementById('finalLifeDays').innerText = daysGained.replace('.', ',');
+        }
+
+        function showRebellionScreen() {
+            const name = localStorage.getItem('rr_name') || 'Rebell:in';
+            document.getElementById('rebellionName').innerText = name;
+            
+            const screen = document.getElementById('rebellionScreen');
+            screen.classList.add('show');
+            initFireworks();
+        }
+
+        function closeRebellionScreen() {
+            document.getElementById('rebellionScreen').classList.remove('show');
+        }
+
+        function restartTransformation() {
+            if (confirm('Möchtest du deinen Fortschritt wirklich zurücksetzen und neu starten?')) {
+                completedDays = [];
+                localStorage.removeItem('rr_journal');
+                localStorage.setItem('rr_completed', JSON.stringify(completedDays));
+                closeRebellionScreen();
+                renderDays();
+                updateProgress();
+                calculateMetrics();
+            }
+        }
+
+        // ============ SIMPLE FIREWORKS EFFECT ============
+        function initFireworks() {
+            const canvas = document.getElementById('fireworksCanvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            let particles = [];
+            const colors = ['#00f3ff', '#00ff88', '#ffe14d', '#b14bff', '#ffffff'];
+
+            function createFirework() {
+                const x = Math.random() * canvas.width;
+                const y = Math.random() * (canvas.height * 0.6);
+                for (let i = 0; i < 50; i++) {
+                    particles.push({
+                        x: x,
+                        y: y,
+                        vx: (Math.random() - 0.5) * 8,
+                        vy: (Math.random() - 0.5) * 8,
+                        color: colors[Math.floor(Math.random() * colors.length)],
+                        alpha: 1,
+                        size: Math.random() * 3 + 1
+                    });
+                }
+            }
+
+            let timer = setInterval(createFirework, 400);
+
+            function loop() {
+                ctx.fillStyle = 'rgba(6, 9, 17, 0.2)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                particles.forEach((p, index) => {
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.alpha -= 0.015;
+
+                    ctx.globalAlpha = Math.max(0, p.alpha);
+                    ctx.fillStyle = p.color;
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    if (p.alpha <= 0) {
+                        particles.splice(index, 1);
+                    }
+                });
+
+                if (document.getElementById('rebellionScreen').classList.contains('show')) {
+                    requestAnimationFrame(loop);
+                } else {
+                    clearInterval(timer);
+                }
+            }
+
+            loop();
+        }
+    </script>
+<style>
+.x-sos{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:50;background:#ff3b5c;color:#fff;border:0;border-radius:999px;padding:16px 22px;font:800 .95rem Montserrat,sans-serif;box-shadow:0 0 24px rgba(255,59,92,.6);cursor:pointer}
+.x-ov{position:fixed;inset:0;z-index:100;background:rgba(6,9,17,.97);display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;gap:14px}
+.x-ov.on{display:flex}
+.x-circle{width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,#00f3ff,#0a3d52);box-shadow:0 0 50px rgba(0,243,255,.5);transform:scale(.6);transition:transform 4s ease-in-out}
+.x-phase{font:700 1.6rem Rajdhani,sans-serif;color:#00f3ff;letter-spacing:2px}
+.x-time{font:800 2.6rem Rajdhani,sans-serif;color:#fff}
+.x-why{max-width:480px;color:#ffe14d;font-style:italic}
+.x-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:10px 0}
+.x-btn{background:rgba(0,243,255,.12);border:1px solid #00f3ff;color:#fff;border-radius:10px;padding:12px 18px;font:700 .9rem Montserrat,sans-serif;cursor:pointer}
+.x-btn.g{background:#00ff88;color:#062;border-color:#00ff88}.x-btn.r{border-color:#ff3b5c}
+.x-card input[type=range]{width:100%}.x-card select,.x-card textarea{width:100%;background:#0d1626;color:#fff;border:1px solid rgba(0,243,255,.3);border-radius:8px;padding:10px;font:inherit;margin:6px 0}
+.x-live{font:800 clamp(1.6rem,6vw,2.4rem) Rajdhani,sans-serif;color:#00ff88;text-align:center}
+.x-ms{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:12px}
+.x-ms div{border:1px solid rgba(0,243,255,.2);border-radius:12px;padding:12px;text-align:center}.x-ms .ok{border-color:#00ff88;color:#00ff88}
+</style>
+<button class="x-sos" onclick="xSos()">🆘 Suchtdruck? Hier!</button>
+<div class="x-ov" id="xOv">
+  <div class="x-why" id="xWhy"></div>
+  <div class="x-circle" id="xCircle"></div>
+  <div class="x-phase" id="xPhase">Bereit?</div>
+  <div class="x-time" id="xTime">5:00</div>
+  <p style="max-width:420px;color:#94a3b8">Die Welle dauert meist nur 3–5 Minuten. Atme mit dem Kreis (4-7-8) und schau ihr beim Abklingen zu.</p>
+  <div class="x-row"><button class="x-btn g" onclick="xWin()">Ich habe es geschafft ✔</button><button class="x-btn" onclick="xClose()">Schließen</button></div>
+</div>
+<script>
+(function(){
+const $=id=>document.getElementById(id), L=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}}, S=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
+let tm=null,bt=null,on=false;
+function build(){
+ const box=document.createElement('div');box.className='x-card';
+ box.innerHTML=`
+ <div class="card"><div class="section-header"><div class="icon-wrapper">⏱️</div><h3>Deine rauchfreie Zeit (live)</h3></div>
+  <div class="x-live" id="xLive">–</div>
+  <p class="story-p" style="text-align:center" id="xLiveSub"></p>
+  <label>Mein Warum (wird dir bei Suchtdruck gezeigt)</label>
+  <textarea id="xWhyIn" rows="2" placeholder="z. B. Ich will mit meinen Kindern Fußball spielen, ohne zu husten."></textarea>
+  <div class="x-row"><button class="x-btn" onclick="xSaveWhy()">Warum speichern</button><button class="x-btn r" onclick="xRelapse()">Ich habe geraucht – Neustart</button></div>
+  <p class="story-p" id="xRelMsg"></p></div>
+ <div class="card"><div class="section-header"><div class="icon-wrapper">📊</div><h3>Craving-Tracker (1 Minute pro Tag)</h3></div>
+  <label>Suchtdruck gerade: <b id="xVal">5</b> / 10</label>
+  <input type="range" id="xLvl" min="0" max="10" value="5" oninput="xVal.textContent=this.value">
+  <label>Auslöser</label>
+  <select id="xTrig"><option>Stress / Nervosität</option><option>Kaffee</option><option>Nach dem Essen</option><option>Alkohol / Feiern</option><option>Langeweile</option><option>Pause / Gewohnheit</option><option>Kein besonderer</option></select>
+  <button class="x-btn" onclick="xLog()">Eintrag speichern</button>
+  <svg id="xChart" viewBox="0 0 320 110" style="width:100%;margin-top:14px"></svg>
+  <p class="story-p" id="xInsight"></p></div>`;
+ const ref=document.querySelector('.progress-sticky');ref.parentNode.insertBefore(box,ref);
+ $('xWhyIn').value=localStorage.getItem('rr_why')||'';
+}
+window.xSaveWhy=()=>{localStorage.setItem('rr_why',$('xWhyIn').value.trim());$('xRelMsg').textContent='Gespeichert. Du siehst es ab jetzt bei Suchtdruck.'};
+function start(){const s=localStorage.getItem('rr_start');const d=s?new Date(s+'T00:00:00'):new Date();return d}
+function live(){const ms=Math.max(0,Date.now()-start());const d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5),m=Math.floor(ms%36e5/6e4);
+ $('xLive').textContent=d+' Tage '+h+' Std '+m+' Min';
+ const w=L('rr_wins',0),r=L('rr_rel',0);$('xLiveSub').textContent=w+' Suchtwellen bezwungen'+(r?' · '+r+' Neustart(s) – jeder zählt als Lernschritt':'');}
+
+window.xRelapse=()=>{if(!confirm('Ein Ausrutscher ist kein Scheitern. Neustart heute setzen?'))return;const t=new Date();localStorage.setItem('rr_start',t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0'));S('rr_rel',L('rr_rel',0)+1);$('xRelMsg').textContent='Neustart gesetzt. Frage dich: Welcher Auslöser war es? Trage ihn unten im Tracker ein und schreib einen neuen Wenn-dann-Plan.';live()};
+window.xLog=()=>{const a=L('rr_log',[]);a.push({t:Date.now(),v:+$('xLvl').value,g:$('xTrig').value});S('rr_log',a.slice(-200));chart()};
+function chart(){const a=L('rr_log',[]).slice(-14),s=$('xChart');if(!a.length){s.innerHTML='<text x="10" y="55" fill="#94a3b8" font-size="11">Noch keine Einträge.</text>';$('xInsight').textContent='';return}
+ const w=300/a.length;s.innerHTML=a.map((e,i)=>{const h=e.v*9;return `<rect x="${10+i*w}" y="${100-h}" width="${w-4}" height="${Math.max(h,2)}" rx="3" fill="${e.v>=7?'#ff3b5c':e.v>=4?'#ffe14d':'#00ff88'}"/>`}).join('');
+ const c={};L('rr_log',[]).forEach(e=>c[e.g]=(c[e.g]||0)+1);const top=Object.entries(c).sort((x,y)=>y[1]-x[1])[0];$('xInsight').textContent='Dein häufigster Auslöser: '+top[0]+' ('+top[1]+'×). Bau dafür einen festen Wenn-dann-Plan.'}
+const ph=[['Einatmen',4,1],['Halten',7,1],['Ausatmen',8,.6]];
+function loop(i){if(!on)return;const[p,sec,sc]=ph[i%3];$('xPhase').textContent=p+' · '+sec;const c=$('xCircle');c.style.transitionDuration=sec+'s';c.style.transform='scale('+(p==='Ausatmen'?.6:1)+')';bt=setTimeout(()=>loop(i+1),sec*1000)}
+window.xSos=()=>{on=true;$('xWhy').textContent=localStorage.getItem('rr_why')?'„'+localStorage.getItem('rr_why')+'“':'Denk daran, warum du angefangen hast.';$('xOv').classList.add('on');let t=300;const f=()=>{$('xTime').textContent=Math.floor(t/60)+':'+String(t%60).padStart(2,'0');if(t--<=0){clearInterval(tm);$('xPhase').textContent='Die Welle ist vorbei.'}};f();tm=setInterval(f,1000);loop(0)};
+window.xClose=()=>{on=false;clearInterval(tm);clearTimeout(bt);$('xOv').classList.remove('on')};
+window.xWin=()=>{S('rr_wins',L('rr_wins',0)+1);xClose();live()};
+document.addEventListener('DOMContentLoaded',()=>{build();chart();live();setInterval(live,30000)});
+})();
+</script>
+
+
+<!-- ===== START-ANLEITUNG (Sub-Fenster) ===== -->
+<style>
+.g-ov{position:fixed;inset:0;z-index:200;background:rgba(3,6,12,.92);display:none;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top)) 16px max(16px,env(safe-area-inset-bottom))}
+.g-ov.on{display:flex}
+.g-box{position:relative;width:100%;max-width:640px;max-height:100%;overflow-y:auto;background:#0d1626;border:1px solid rgba(0,243,255,.35);border-radius:18px;padding:28px 26px;box-shadow:0 0 50px rgba(0,243,255,.2)}
+.g-box h2{font:800 1.5rem Montserrat,sans-serif;color:#fff;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.g-box h2 span{color:#00f3ff}
+.g-sub{color:#94a3b8;margin-bottom:16px;font-size:.95rem}
+.g-steps{list-style:none;counter-reset:s;display:grid;gap:12px;margin:0 0 20px;padding:0}
+.g-steps li{counter-increment:s;position:relative;padding:12px 14px 12px 54px;background:rgba(0,243,255,.06);border:1px solid rgba(0,243,255,.18);border-radius:12px;font-size:.93rem;line-height:1.55}
+.g-steps li::before{content:counter(s);position:absolute;left:12px;top:12px;width:30px;height:30px;border-radius:50%;background:#00f3ff;color:#062;font:800 1rem Rajdhani,sans-serif;display:flex;align-items:center;justify-content:center}
+.g-steps b{color:#00f3ff}
+.g-q{text-align:center;font:800 1.25rem Montserrat,sans-serif;color:#ffe14d;margin:6px 0 16px;line-height:1.4}
+.g-go{display:block;width:100%;background:#00ff88;color:#062;border:0;border-radius:12px;padding:16px;font:800 1.05rem Montserrat,sans-serif;cursor:pointer;box-shadow:0 0 24px rgba(0,255,136,.4)}
+.g-x{position:absolute;right:12px;top:8px;background:none;border:0;color:#94a3b8;font-size:1.6rem;cursor:pointer;line-height:1}
+.g-help{background:none;border:1px solid rgba(0,243,255,.35);color:#00f3ff;border-radius:8px;padding:4px 12px;font:700 .8rem Rajdhani,sans-serif;letter-spacing:1px;cursor:pointer;text-transform:uppercase}
+</style>
+<div class="g-ov" id="gOv" role="dialog" aria-modal="true" aria-labelledby="gTitle">
+  <div class="g-box">
+    <button class="g-x" onclick="gClose()" aria-label="Schließen">&times;</button>
+    <h2 id="gTitle">So funktioniert deine <span>Rebellion</span></h2>
+    <p class="g-sub">Lies dir diese Anleitung einmal in Ruhe durch. Sie dauert etwa eine Minute.</p>
+    <ol class="g-steps">
+      <li><b>Profil ausfüllen.</b> Trage Name, Startdatum, Zigaretten pro Tag und Preis pro Schachtel ein und tippe auf „Profil speichern“. Daraus berechnet die Seite deine gesparten Zigaretten, dein gespartes Geld und deine gewonnene Lebenszeit.</li>
+      <li><b>Schriftlich festlegen: dein Warum.</b> Schreibe in einem Satz auf, warum du aufhören willst. Er wird dir später bei Suchtdruck angezeigt.</li>
+      <li><b>Start-Vorbereitung erledigen.</b> Entsorge Zigaretten, Feuerzeuge und Aschenbecher und sag mindestens drei Menschen Bescheid, dass du aufhörst.</li>
+      <li><b>Loslegen.</b> Tippe auf „Ja, ich starte jetzt“. Damit legst du dein Startdatum fest, und Tag 1 öffnet sich.</li>
+      <li><b>Jeden Tag 10 Minuten.</b> Jeden Tag öffnet sich automatisch der nächste Tag, spätere Tage bleiben bis zu ihrem Datum gesperrt. Öffne die Tageskarte, erledige die 3 Aufgaben, den Wenn-dann-Plan und den Mini-Check-in. Markiere den Tag danach als abgeschlossen.</li>
+      <li><b>Bei Suchtdruck: roter Button unten rechts.</b> Er startet einen 5-Minuten-Timer mit Atemübung. Die Welle dauert meist nur 3–5 Minuten. Halte durch, bis sie vorbei ist.</li>
+      <li><b>Craving-Tracker nutzen.</b> Trage bei Suchtdruck Stärke und Auslöser ein. So erkennst du deine gefährlichsten Situationen.</li>
+      <li><b>Ausrutscher?</b> Das ist kein Scheitern. Tippe auf „Ich habe geraucht – Neustart“, finde den Auslöser und mach mit einem neuen Plan weiter.</li>
+    </ol>
+    <p class="g-q">Bist du bereit für den Neustart in dein rauchfreies Leben?</p>
+    <button class="g-go" onclick="gClose()">Ja, ich bin bereit &#128640;</button>
+  </div>
+</div>
+<script>
+(function(){
+ var ov=document.getElementById('gOv');
+ window.gOpen=function(){ov.classList.add('on');document.body.style.overflow='hidden';var b=ov.querySelector('.g-go');b&&b.focus()};
+ window.gClose=function(){ov.classList.remove('on');document.body.style.overflow='';try{localStorage.setItem('rr_intro','1')}catch(e){}};
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&ov.classList.contains('on'))gClose()});
+ document.addEventListener('DOMContentLoaded',function(){
+  var bar=document.querySelector('.status-bar');
+  if(bar){var b=document.createElement('button');b.className='g-help';b.textContent='Anleitung';b.onclick=gOpen;bar.appendChild(b)}
+  var seen=false;try{seen=localStorage.getItem('rr_intro')==='1'}catch(e){}
+  if(!seen&&window.rrConsent&&rrConsent())gOpen();
+ });
+})();
+</script>
+
+<style id="human-theme">
+:root{--hbg:#FBF6EE;--hcard:#FFFFFF;--hline:#EADFCF;--hink:#2B2A28;--hbody:#4A443C;--hmut:#7A7269;--hsoft:#EAF5EE;--hpri:#25835A;--hwarm:#FF7A59;--hshadow:0 6px 24px rgba(90,65,30,.08);
+--bg-color:var(--hbg);--card-bg:var(--hcard);--card-border:var(--hline);--neon-cyan:var(--hpri);--cyan-glow:rgba(37,131,90,.25);--text-main:var(--hbody);--text-muted:var(--hmut);--text-white:var(--hink);--success-green:var(--hpri);--accent-purple:#8B6FD6;--accent-yellow:#B7791F}
+@media(prefers-color-scheme:dark){:root{--hbg:#1C1A18;--hcard:#26231F;--hline:#3A352F;--hink:#F5EEE4;--hbody:#D8CFC2;--hmut:#A69C8E;--hsoft:#22362B;--hpri:#4FBF8A;--hshadow:0 6px 24px rgba(0,0,0,.35)}}
+html{-webkit-text-size-adjust:100%}
+*{font-family:ui-rounded,"SF Pro Rounded",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif!important}
+body{background:var(--hbg)!important;background-image:radial-gradient(circle at 15% 0,rgba(255,170,120,.16),transparent 45%),radial-gradient(circle at 90% 30%,rgba(37,131,90,.10),transparent 45%)!important;color:var(--hbody);line-height:1.65}
+.glow-orb{display:none!important}
+h1,h2,h3,h4,h5,.tag,.program-phase,.day-badge,.timeline-item .time,button,.btn-save,.btn-switch,.btn-complete,.btn-rebellion{text-transform:none!important;letter-spacing:0!important}
+h1{font-weight:800!important;line-height:1.15!important}
+.header-title h1 span,.bold-cyan{color:var(--hpri)!important;text-shadow:none!important}
+.card,.status-bar,.progress-sticky{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border-radius:20px!important;box-shadow:var(--hshadow)!important;background:var(--hcard)!important;border:1px solid var(--hline)!important}
+.status-bar{border-radius:999px!important;padding:8px 16px!important}
+.progress-sticky{background:color-mix(in srgb,var(--hbg) 92%,transparent)!important;-webkit-backdrop-filter:blur(14px)!important;backdrop-filter:blur(14px)!important;border-radius:0 0 20px 20px!important}
+.card.completed{border-color:var(--hpri)!important}
+.card::before{width:5px!important;background:var(--hpri)!important;opacity:.85}
+.card.locked::before{background:var(--hline)!important}
+.pulse-dot{background:var(--hpri)!important;box-shadow:0 0 0 4px rgba(37,131,90,.18)!important}
+.story-p,.quiz-explain{color:var(--hbody)!important}
+.quote-box,.highlight-box,.neuro-box,.timeline-item,.fact-item,.metric-tile,.footer-contact,.quiz-box,.quiz-explain,.rebellion-stat{background:var(--hsoft)!important;border:1px solid var(--hline)!important;color:var(--hink)!important;border-radius:16px!important}
+.action-box,.rebellion-quote{background:color-mix(in srgb,var(--hwarm) 12%,transparent)!important;border-color:color-mix(in srgb,var(--hwarm) 35%,transparent)!important;color:var(--hink)!important}
+.timeline-item .effect,.launch-steps h4,.day-title-preview,.rebellion-name,.rebellion-content,.rebellion-stat .unit{color:var(--hink)!important}
+.icon-wrapper,.chevron-icon,.launch-steps li::before{background:var(--hsoft)!important;border-color:var(--hline)!important;color:var(--hpri)!important}
+.input-grid input,.x-card select,.x-card textarea{background:var(--hcard)!important;color:var(--hink)!important;border:1.5px solid var(--hline)!important;border-radius:12px!important;font-size:16px!important;min-height:46px}
+.input-grid input:focus,.x-card select:focus,.x-card textarea:focus{outline:none;border-color:var(--hpri)!important;box-shadow:0 0 0 4px rgba(37,131,90,.15)}
+label{color:var(--hmut)!important}
+.btn-save,.btn-switch,.btn-rebellion,.btn-complete.is-done,.x-btn.g,.g-go{background:var(--hpri)!important;color:#fff!important;border:0!important;border-radius:999px!important;box-shadow:0 6px 16px rgba(37,131,90,.28)!important;font-weight:700!important}
+.btn-switch.active{background:var(--hpri)!important}
+.btn-complete,.btn-rebellion.secondary,.x-btn{background:transparent!important;color:var(--hpri)!important;border:1.5px solid var(--hpri)!important;border-radius:999px!important;font-weight:700!important;box-shadow:none!important}
+.btn-complete:hover,.btn-rebellion.secondary:hover,.card.open .chevron-icon{background:var(--hpri)!important;color:#fff!important}
+.x-btn.r{color:var(--hwarm)!important;border-color:var(--hwarm)!important}
+button{transition:transform .15s ease,box-shadow .2s ease}button:active{transform:scale(.97)}
+.quiz-btn{background:var(--hcard)!important;color:var(--hink)!important;border:1px solid var(--hline)!important;border-radius:12px!important}
+.quiz-btn:hover{background:var(--hsoft)!important}
+.progress-track{background:var(--hline)!important;border:0!important;border-radius:999px!important;height:12px!important}
+.progress-fill{background:linear-gradient(90deg,var(--hpri),#7ED6A8)!important;box-shadow:none!important;border-radius:999px!important}
+.metric-tile .value,.timeline-item .time,.day-badge{color:var(--hpri)!important}
+.footer-contact a{color:var(--hpri)!important}
+.rebellion-screen{background:color-mix(in srgb,var(--hbg) 96%,transparent)!important}
+.rebellion-title{background:linear-gradient(90deg,#25835A,#FF7A59,#E0A100,#25835A)!important;background-size:300% 100%!important;-webkit-background-clip:text!important;background-clip:text!important}
+.x-sos{background:var(--hwarm)!important;box-shadow:0 8px 22px rgba(255,122,89,.45)!important;font-weight:700!important;bottom:max(18px,env(safe-area-inset-bottom))!important}
+.x-ov{background:#1F3A2E!important}
+.x-circle{background:radial-gradient(circle,#9BE3BD,#2C6A4D)!important;box-shadow:0 0 60px rgba(155,227,189,.45)!important}
+.x-phase{color:#BFF0D6!important}.x-time,.x-ov .x-why{color:#fff!important}.x-ov p{color:#C9DDD2!important}
+.x-live{color:var(--hpri)!important}
+.g-ov{background:rgba(40,30,20,.55)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.g-box{background:var(--hcard)!important;border:1px solid var(--hline)!important;border-radius:24px!important;box-shadow:0 20px 60px rgba(0,0,0,.25)!important}
+.g-box h2{color:var(--hink)!important;text-transform:none!important;letter-spacing:0!important}.g-box h2 span,.g-steps b{color:var(--hpri)!important}
+.g-steps li{background:var(--hsoft)!important;border-color:var(--hline)!important;color:var(--hbody)}
+.g-steps li::before{background:var(--hpri)!important;color:#fff!important}
+.g-q{color:var(--hwarm)!important}.g-sub{color:var(--hmut)!important}
+.g-help{color:var(--hpri)!important;border-color:var(--hpri)!important;border-radius:999px!important}
+.h-toast{position:fixed;left:50%;top:max(16px,env(safe-area-inset-top));transform:translate(-50%,-300%);opacity:0;visibility:hidden;z-index:300;background:var(--hink);color:var(--hbg);padding:12px 20px;border-radius:999px;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.25);transition:transform .45s cubic-bezier(.2,1.3,.4,1),opacity .3s,visibility .3s;max-width:90vw;text-align:center}
+.h-toast.on{transform:translate(-50%,0);opacity:1;visibility:visible}
+.h-in{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}.h-in.v{opacity:1;transform:none}
+@media(max-width:600px){.card{padding:20px 18px!important}.container{padding:14px!important}}
+@media(prefers-reduced-motion:reduce){.h-in{opacity:1;transform:none;transition:none}*{animation:none!important}}
+</style>
+<div class="h-toast" id="hToast" role="status"></div>
+<script>
+(function(){
+ var T=document.getElementById('hToast'),tt;
+ window.hToast=toast;function toast(m){T.textContent=m;T.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){T.classList.remove('on')},2800)}
+ var praise=['Stark, wieder ein Tag geschafft 🎉','Das war richtig gut. Weiter so 💚','Ein Tag mehr für dich 🌱','Du machst das großartig 👏','Wieder ein Schritt in dein neues Leben 🚀'];
+ var _t=window.toggleComplete;
+ if(typeof _t==='function')window.toggleComplete=function(d){_t.apply(this,arguments);try{if(completedDays.indexOf(d)>-1)toast(praise[Math.floor(Math.random()*praise.length)])}catch(e){}};
+ var _s=window.saveProfile;
+ if(typeof _s==='function')window.saveProfile=function(){_s.apply(this,arguments);greet()};
+ function greet(){var n=(localStorage.getItem('rr_name')||'').trim(),g=document.getElementById('gGreet');if(g)g.textContent=n?'Hallo '+n+' 👋 Schön, dass du dran bleibst.':''}
+ document.addEventListener('DOMContentLoaded',function(){
+  greet();
+  var lastD=todayISO();
+  function openToday(){try{if(isActivated){var c=document.getElementById('day-card-'+currentDay());if(c&&isDayUnlocked(currentDay()))c.classList.add('open')}}catch(e){}}
+  function tick(){if(todayISO()!==lastD){lastD=todayISO();renderDays();openToday();toast('Ein neuer Tag ist offen 🌱')}}
+  setInterval(tick,60000);document.addEventListener('visibilitychange',function(){if(!document.hidden)tick()});
+  openToday();
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}})},{threshold:.08});
+   document.querySelectorAll('.container>.card').forEach(function(c){c.classList.add('h-in');io.observe(c)})}
+ });
+})();
+</script>
+<style id="journal-css">
+.jr{margin-top:18px;padding:18px;border-radius:18px;background:var(--hsoft);border:1px solid var(--hline)}
+.jr h5{font-size:1.05rem;color:var(--hink);margin-bottom:10px}
+.jr label{display:block;margin:14px 0 6px;font-weight:700;font-size:.9rem}
+.jr input[type=range]{width:100%;accent-color:var(--hpri)}
+.jr-fe,.jr-st{display:flex;gap:8px;flex-wrap:wrap}
+.jr-fe button{flex:1;min-width:56px;border:1.5px solid var(--hline);background:var(--hcard);border-radius:14px;padding:8px 4px;font-size:1.6rem;line-height:1.1;cursor:pointer;color:var(--hmut)}
+.jr-fe small{display:block;font-size:.65rem;font-weight:700;margin-top:2px}
+.jr-st button{border:1.5px solid var(--hline);background:var(--hcard);color:var(--hink);border-radius:999px;padding:8px 14px;font-weight:600;font-size:.88rem;min-height:40px;cursor:pointer}
+.jr-fe button.on,.jr-st button.on{border-color:var(--hpri);background:var(--hsoft);box-shadow:0 0 0 3px rgba(37,131,90,.18);color:var(--hink)}
+.jr textarea{width:100%;min-height:110px;background:var(--hcard);color:var(--hink);border:1.5px solid var(--hline);border-radius:14px;padding:12px;font-size:16px;line-height:1.5;resize:vertical}
+.jr textarea:focus{outline:none;border-color:var(--hpri)}
+.jr-ok{display:block;margin-top:8px;color:var(--hmut);font-size:.78rem}
+#analysis h2{font-size:1.5rem;color:var(--hink);line-height:1.25;margin-bottom:6px}
+#analysis h3{font-size:1.1rem;color:var(--hpri);margin:24px 0 8px}
+#analysis p{margin:8px 0}
+#analysis .an-q{border-left:4px solid var(--hwarm);padding:8px 14px;margin:10px 0;background:color-mix(in srgb,var(--hwarm) 10%,transparent);border-radius:0 12px 12px 0;color:var(--hink);font-style:italic}
+#analysis .an-q small{display:block;font-style:normal;color:var(--hmut)}
+#analysis svg{width:100%;height:auto;margin:6px 0}
+.an-nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:12px 0}
+.an-nums div{background:var(--hsoft);border:1px solid var(--hline);border-radius:14px;padding:12px;text-align:center}
+.an-nums b{display:block;font-size:1.5rem;color:var(--hpri)}
+.an-nums span{font-size:.8rem;color:var(--hmut)}
+.progress-title-row,.progress-title-row span{text-transform:none!important;letter-spacing:0!important;font-size:.85rem!important}.progress-sticky{padding:10px 16px!important}
+.an-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+@media print{body.print-an>*:not(.container){display:none!important}body.print-an .container>*:not(#analysis){display:none!important}body.print-an{background:#fff!important}body.print-an #analysis{box-shadow:none!important;border:0!important}body.print-an #analysis *{color:#222!important}body.print-an .an-actions{display:none!important}}
+</style>
+<script>
+(function(){
+var FE=[['😄','Super',5],['🙂','Gut',4],['😐','Okay',3],['😕','Schwierig',2],['😣','Hart',1]];
+var ST=[['Ruhig',1],['Stolz',1],['Motiviert',1],['Erleichtert',1],['Dankbar',1],['Gestresst',0],['Unruhig',0],['Gereizt',0],['Müde',0],['Traurig',0]];
+var POS={};ST.forEach(function(s){POS[s[0]]=s[1]});
+function J(){try{return JSON.parse(localStorage.getItem('rr_journal'))||{}}catch(e){return {}}}
+function W(j){try{localStorage.setItem('rr_journal',JSON.stringify(j))}catch(e){}}
+function E(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function set(d,k,v){var j=J();j[d]=j[d]||{};j[d][k]=v;W(j)}
+window.jrSet=set;
+window.jrFeel=function(d,v,b){set(d,'f',v);b.parentNode.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});b.classList.add('on')};
+window.jrState=function(d,n,b){var j=J();j[d]=j[d]||{};var a=j[d].s||[],i=a.indexOf(n);if(i>-1)a.splice(i,1);else a.push(n);j[d].s=a;W(j);b.classList.toggle('on')};
+window.journalHtml=function(d){
+ var e=J()[d]||{},s=e.s||[];
+ return '<div class="jr"><h5>📓 Dein Tagebuch für Tag '+d+'</h5>'+
+ '<label>Suchtdruck heute, stärkster Moment: <b id="jv-'+d+'">'+(e.c!=null?e.c+' / 10':'noch offen')+'</b></label>'+
+ '<input type="range" min="0" max="10" value="'+(e.c!=null?e.c:5)+'" oninput="jrSet('+d+',\'c\',+this.value);document.getElementById(\'jv-'+d+'\').textContent=this.value+\' / 10\'">'+
+ '<label>Wie fühlst du dich heute?</label><div class="jr-fe">'+FE.map(function(f){return '<button type="button" class="'+(e.f===f[2]?'on':'')+'" onclick="jrFeel('+d+','+f[2]+',this)">'+f[0]+'<small>'+f[1]+'</small></button>'}).join('')+'</div>'+
+ '<label>Dein innerer Zustand (mehrere möglich)</label><div class="jr-st">'+ST.map(function(x){return '<button type="button" class="'+(s.indexOf(x[0])>-1?'on':'')+'" onclick="jrState('+d+',\''+x[0]+'\',this)">'+x[0]+'</button>'}).join('')+'</div>'+
+ '<label>Deine Beschreibung / Notiz</label><textarea placeholder="Wie war dein Tag? Was war schwer, was war schön? Worauf bist du stolz?" oninput="jrSet('+d+',\'n\',this.value)">'+E(e.n||'')+'</textarea>'+
+ '<small class="jr-ok">✓ Wird automatisch nur auf deinem Gerät gespeichert.</small></div>';
+};
+function avg(a){return a.length?a.reduce(function(s,x){return s+x[1]},0)/a.length:null}
+function f1(x){return (Math.round(x*10)/10).toString().replace('.',',')}
+function chart(pts,lo,hi,col){
+ if(pts.length<2)return '';
+ var X=function(d){return 14+(d-1)*(292/20)},Y=function(v){return 98-(v-lo)/(hi-lo)*86};
+ var g=[1,7,14,21].map(function(d){return '<text x="'+X(d)+'" y="112" font-size="9" text-anchor="middle" fill="currentColor" opacity=".6">Tag '+d+'</text>'}).join('');
+ return '<svg viewBox="0 0 320 118" role="img"><line x1="8" y1="98" x2="312" y2="98" stroke="currentColor" opacity=".2"/>'+g+'<polyline fill="none" stroke="'+col+'" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" points="'+pts.map(function(p){return X(p[0])+','+Y(p[1])}).join(' ')+'"/>'+pts.map(function(p){return '<circle cx="'+X(p[0])+'" cy="'+Y(p[1])+'" r="3.5" fill="'+col+'"/>'}).join('')+'</svg>';
+}
+function build(){
+ var j=J(),ent=0,cr=[],fe=[],notes=[],words=0,cnt={},pos=0,tot=0,pe=0,te=0,pl=0,tl=0;
+ for(var d=1;d<=21;d++){var e=j[d]||{};
+  if(e.c!=null||e.f||e.n||(e.s&&e.s.length))ent++;
+  if(e.c!=null)cr.push([d,e.c]);if(e.f)fe.push([d,e.f]);
+  if(e.n&&e.n.trim()){notes.push([d,e.n.trim()]);words+=e.n.trim().split(/\s+/).length}
+  (e.s||[]).forEach(function(n){cnt[n]=(cnt[n]||0)+1;tot++;var p=POS[n];pos+=p;if(d<=7){te++;pe+=p}if(d>=15){tl++;pl+=p}});}
+ var S=[],start=localStorage.getItem('rr_start')||'',name=(localStorage.getItem('rr_name')||'').trim();
+ var cigs=Math.round(21*(parseFloat(localStorage.getItem('rr_cigs'))||24)),money=(cigs/20*(parseFloat(localStorage.getItem('rr_price'))||8.5)),life=cigs*11/1440;
+ var nf=function(x){return x.toLocaleString('de-DE')};
+ var sd=start?new Date(start+'T00:00:00').toLocaleDateString('de-DE',{day:'numeric',month:'long',year:'numeric'}):'';
+ S.push({h:'Dein Weg in Zahlen',ps:['Du hast'+(sd?' am '+sd:'')+' begonnen und alle 21 Tage abgeschlossen'+(name?', '+name:'')+'. Das ist eine echte Leistung.','Rein rechnerisch hast du in dieser Zeit '+nf(cigs)+' Zigaretten nicht geraucht, ca. '+money.toFixed(2).replace('.',',')+' € gespart und etwa '+f1(life)+' Tage Lebenszeit dazugewonnen (grobe Schätzung mit 11 Minuten pro Zigarette).'],
+  x:'<div class="an-nums"><div><b>21</b><span>Tage geschafft</span></div><div><b>'+nf(cigs)+'</b><span>Zigaretten gespart</span></div><div><b>'+money.toFixed(0)+' €</b><span>gespart</span></div><div><b>'+ent+'</b><span>Tagebuch-Einträge</span></div></div>'});
+ // Suchtdruck
+ var ps=[],ea=avg(cr.filter(function(x){return x[0]<=7})),la=avg(cr.filter(function(x){return x[0]>=15}));
+ if(cr.length>=2){
+  if(ea!=null&&la!=null&&la<ea)ps.push('In deiner ersten Woche lag dein Suchtdruck im Schnitt bei '+f1(ea)+' von 10, in der letzten Woche bei '+f1(la)+'. Das ist ein Rückgang um '+Math.round((ea-la)/ea*100)+' %. Dein Gehirn lernt sichtbar um.');
+  else ps.push('Dein Suchtdruck hat geschwankt, und das gehört dazu. Das Wichtigste: Du hast gelernt, die Wellen zu erkennen und auszuhalten, statt ihnen sofort nachzugeben.');
+  var mx=cr.reduce(function(a,b){return b[1]>a[1]?b:a}),mn=cr.reduce(function(a,b){return b[1]<a[1]?b:a});
+  ps.push('Am stärksten war der Druck an Tag '+mx[0]+' ('+mx[1]+'/10) – und du bist trotzdem drangeblieben. Am ruhigsten warst du an Tag '+mn[0]+' ('+mn[1]+'/10).');
+  var hard=cr.filter(function(x){return x[1]>=7&&completedDays.indexOf(x[0])>-1}).length;
+  if(hard)ps.push('An '+hard+' Tag'+(hard>1?'en':'')+' mit hohem Suchtdruck hast du den Tag trotzdem abgeschlossen. Das zeigt echte Stärke.');
+ }else ps.push('Du hast noch wenige Suchtdruck-Werte eingetragen. Schon ein Wert pro Tag macht deine Entwicklung beim nächsten Mal sichtbar.');
+ S.push({h:'Dein Suchtdruck im Verlauf',ps:ps,x:chart(cr,0,10,'#FF7A59')});
+ // Gefühl
+ ps=[];var fa=avg(fe.filter(function(x){return x[0]<=7})),fl=avg(fe.filter(function(x){return x[0]>=15})),fall=avg(fe);
+ if(fe.length>=2){
+  if(fa!=null&&fl!=null&&fl>fa)ps.push('Deine Stimmung ist von durchschnittlich '+f1(fa)+' in der ersten Woche auf '+f1(fl)+' in der letzten Woche gestiegen (Skala 1 bis 5). Du fühlst dich sichtbar besser.');
+  else ps.push('Deine Stimmung lag im Schnitt bei '+f1(fall)+' von 5. Auch an schwierigen Tagen hast du weitergemacht, und das zählt.');
+  var best=fe.reduce(function(a,b){return b[1]>a[1]?b:a});ps.push('Dein bester Tag war Tag '+best[0]+'.');
+ }else ps.push('Trage künftig täglich dein Gefühl ein, dann zeigt dir die Analyse deine Stimmungskurve.');
+ S.push({h:'Wie du dich gefühlt hast',ps:ps,x:chart(fe,1,5,'#25835A')});
+ // Zustand
+ ps=[];
+ if(tot){var top=Object.keys(cnt).sort(function(a,b){return cnt[b]-cnt[a]}).slice(0,3);
+  ps.push('Am häufigsten hast du dich '+top.map(function(n){return n.toLowerCase()+' ('+cnt[n]+'×)'}).join(', ')+' gefühlt.');
+  ps.push('In '+Math.round(pos/tot*100)+' % deiner Angaben standen positive Zustände wie Ruhe, Stolz oder Motivation.');
+  if(te&&tl&&pl/tl>pe/te)ps.push('In der letzten Woche war dieser Anteil höher als in der ersten (von '+Math.round(pe/te*100)+' % auf '+Math.round(pl/tl*100)+' %). Dein inneres Gleichgewicht wächst.');
+  ps.push('Auch Gefühle wie Unruhe oder Müdigkeit sind normal. Du hast sie wahrgenommen, benannt und ausgehalten, ohne zur Zigarette zu greifen.');
+ }else ps.push('Du hast keinen inneren Zustand ausgewählt. Beim nächsten Mal lohnt es sich, kurz hinzuspüren.');
+ S.push({h:'Dein innerer Zustand',ps:ps});
+ // Stärken
+ ps=[];var w=parseInt(localStorage.getItem('rr_wins')||'0'),rel=parseInt(localStorage.getItem('rr_rel')||'0');
+ ps.push('• Durchhaltevermögen: Du hast 21 Tage lang jeden Tag abgeschlossen.');
+ if(notes.length>=5)ps.push('• Selbstreflexion: Du hast '+notes.length+' Einträge mit insgesamt '+words+' Wörtern geschrieben. Wer sich selbst versteht, kann sich steuern.');
+ if(w>0)ps.push('• Wellen-Meisterschaft: Du hast '+w+' Suchtwelle'+(w>1?'n':'')+' bewusst ausgehalten.');
+ if(rel>0)ps.push('• Mut zum Neuanfang: Du bist nach einem Ausrutscher wieder aufgestanden. Das ist eine der wichtigsten Fähigkeiten.');
+ if(la!=null&&ea!=null&&la<ea)ps.push('• Lernfähigkeit: Dein Suchtdruck ist gesunken. Dein Verhalten verändert sich messbar.');
+ S.push({h:'Deine Stärken',ps:ps});
+ // Worte
+ if(notes.length){var lg=notes.reduce(function(a,b){return b[1].length>a[1].length?b:a}),q=[notes[0],lg,notes[notes.length-1]].filter(function(x,i,a){return a.findIndex(function(y){return y[0]===x[0]})===i});
+  S.push({h:'Deine eigenen Worte',ps:['Das hast du selbst geschrieben:'],x:q.map(function(n){var t=n[1].length>300?n[1].slice(0,300)+'…':n[1];return '<div class="an-q">„'+E(t)+'“<small>Tag '+n[0]+'</small></div>'}).join(''),t:q.map(function(n){return '„'+(n[1].length>300?n[1].slice(0,300)+'…':n[1])+'“ (Tag '+n[0]+')'})});}
+ S.push({h:'Was du mitnimmst',ps:['Du hast in 21 Tagen gezeigt, dass du Auslöser erkennen, Suchtwellen aushalten und dich selbst steuern kannst. Diese Fähigkeiten gehören jetzt dir.','Bleib bei deinen Wenn-dann-Plänen, nutze den Suchtdruck-Button weiter und feiere jeden weiteren rauchfreien Tag. Sollte einmal ein Ausrutscher passieren, ist das kein Scheitern, sondern eine Information für deinen nächsten Plan.','Du kannst stolz auf dich sein.']});
+ return S;
+}
+function text(S){return '21 Tage Rauchfrei – persönliche Analyse deiner Transformation\n\n'+S.map(function(s){return s.h.toUpperCase()+'\n'+s.ps.concat(s.t||[]).join('\n')}).join('\n\n')}
+window.renderAnalysis=function(){
+ var el=document.getElementById('analysis');if(!el)return;
+ var done=completedDays.length,j=J(),n=Object.keys(j).filter(function(k){var e=j[k];return e&&(e.c!=null||e.f||e.n||(e.s&&e.s.length))}).length;
+ if(done<21){el.innerHTML='<div class="section-header"><div class="icon-wrapper">🔒</div><h2 style="font-size:1.25rem">Deine persönliche Analyse</h2></div><p class="story-p">Am Ende deiner 21 Tage wartet hier die Auswertung deiner Transformation, geschrieben aus deinen eigenen Einträgen. Bis dahin sammelt dein Tagebuch die Daten dafür.</p><p class="story-p"><b>'+done+' / 21 Tage abgeschlossen · '+n+' Tagebuch-Einträge</b></p>';return}
+ var S=build();
+ el.innerHTML='<h2>21 Tage Rauchfrei – persönliche Analyse deiner Transformation</h2><p class="story-p">Ein Rückblick auf deinen Weg, aus deinen eigenen Angaben zusammengestellt.</p>'+S.map(function(s){return '<h3>'+s.h+'</h3>'+s.ps.map(function(p){return '<p class="story-p">'+E(p)+'</p>'}).join('')+(s.x||'')}).join('')+
+ '<div class="an-actions"><button class="btn-save" onclick="anPrint()">🖨️ Drucken / als PDF</button><button class="btn-complete" onclick="anCopy()">📋 Text kopieren</button></div>';
+};
+window.anPrint=function(){document.body.classList.add('print-an');window.onafterprint=function(){document.body.classList.remove('print-an')};window.print()};
+window.anCopy=function(){var t=text(build());(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).catch(function(){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()});if(window.hToast)hToast('Text kopiert ✓')};
+window.openAnalysis=function(){var el=document.getElementById('analysis');if(el)el.scrollIntoView({behavior:'smooth',block:'start'})};
+var _r=window.renderDays;window.renderDays=function(){_r.apply(this,arguments);renderAnalysis()};
+document.addEventListener('DOMContentLoaded',renderAnalysis);
+})();
+</script>
+<style id="legal-css">
+.lg-ov{position:fixed;inset:0;z-index:250;background:rgba(40,30,20,.6);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:max(12px,env(safe-area-inset-top)) 12px max(12px,env(safe-area-inset-bottom))}
+.lg-ov.on{display:flex}
+.lg-box{position:relative;width:100%;max-width:740px;max-height:100%;display:flex;flex-direction:column;background:var(--hcard);border:1px solid var(--hline);border-radius:24px;box-shadow:0 20px 60px rgba(0,0,0,.3);overflow:hidden}
+.lg-head{padding:18px 22px 6px}.lg-head h2{font-size:1.25rem;color:var(--hink)}.lg-head p{font-size:.85rem;color:var(--hmut);margin-top:2px}
+.lg-tabs{display:flex;gap:4px;overflow-x:auto;padding:6px 16px 0;border-bottom:1px solid var(--hline)}
+.lg-tabs button{white-space:nowrap;border:0!important;background:none!important;color:var(--hmut);font-weight:700;padding:10px 12px;border-bottom:3px solid transparent!important;border-radius:0!important;cursor:pointer;font-size:.88rem}
+.lg-tabs button.on{color:var(--hpri);border-bottom-color:var(--hpri)!important}
+.lg-body{padding:16px 22px;overflow-y:auto;flex:1;font-size:.9rem;line-height:1.6;color:var(--hbody)}
+.lg-body h3{font-size:.98rem;color:var(--hink);margin:16px 0 4px}.lg-body p,.lg-body li{margin:5px 0}.lg-body ul{padding-left:20px}
+.lg-body .pane{display:none}.lg-body .pane.on{display:block}
+.lg-foot{display:none;padding:14px 22px;border-top:1px solid var(--hline);background:var(--hsoft)}
+.lg-ov.consent .lg-foot{display:block}.lg-ov.consent .lg-x{display:none}
+.lg-foot label{display:flex;gap:10px;align-items:flex-start;margin:6px 0;font-size:.86rem;cursor:pointer;color:var(--hink)!important}
+.lg-foot input{width:22px;height:22px;accent-color:var(--hpri);flex:none;margin-top:1px}
+.lg-foot .g-go{margin-top:10px}.g-go[disabled]{opacity:.4;cursor:not-allowed;box-shadow:none!important}
+.lg-x{position:absolute;right:12px;top:8px;background:none!important;border:0!important;color:var(--hmut);font-size:1.7rem;cursor:pointer;line-height:1;box-shadow:none!important}
+.ph{background:#fff3b0;color:#5a4300;padding:0 4px;border-radius:4px;font-weight:700}
+.f-links{display:flex;gap:6px 14px;flex-wrap:wrap;justify-content:center;margin:14px 0}
+.f-links button{background:none!important;border:0!important;color:var(--hpri)!important;text-decoration:underline;cursor:pointer;font-size:.9rem;font-weight:600;padding:6px;box-shadow:none!important}
+</style>
+<div class="lg-ov" id="lgOv" role="dialog" aria-modal="true" aria-labelledby="lgT">
+ <div class="lg-box">
+  <button class="lg-x" onclick="lgClose()" aria-label="Schließen">&times;</button>
+  <div class="lg-head"><h2 id="lgT">Rechtliches &amp; Nutzungsbedingungen</h2><p>Bitte lies dir die Angaben durch, bevor du startest.</p></div>
+  <div class="lg-tabs"><button data-t="agb">Nutzungsbedingungen (AGB)</button><button data-t="wid">Widerruf</button><button data-t="dat">Datenschutz</button><button data-t="imp">Impressum</button><button data-t="ges">Gesundheitshinweis</button></div>
+  <div class="lg-body">
+<div class="pane" data-t="agb"><h3>§ 1 Anbieter und Geltungsbereich</h3><p>Anbieter des Online-Programms „Rauchfrei-Rebellion“ („Programm“) ist Michaela Schäfer, Lebensbegleiterin („Anbieter“, Anschrift siehe Impressum). Diese Bedingungen gelten für die Nutzung des Programms durch Verbraucher im Sinne des § 13 BGB.</p>
+<h3>§ 2 Leistung</h3><p>Das Programm ist ein digitales Selbsthilfe- und Motivationsangebot über 21 Tage, das im Browser genutzt wird (Tagesaufgaben, Notfall-Funktion bei Suchtdruck, Tracker, Tagebuch, persönliche Auswertung). Es ist <b>keine medizinische Behandlung, Therapie oder Beratung</b>. Ein bestimmter Erfolg, insbesondere dauerhafte Rauchfreiheit, wird nicht geschuldet und nicht versprochen.</p>
+<h3>§ 3 Kosten und Vertragsschluss</h3><p>Das Programm ist derzeit kostenlos nutzbar. Kostenpflichtige Angebote werden vor der Bestellung gesondert mit dem Gesamtpreis einschließlich der gesetzlichen Umsatzsteuer angezeigt. Ein kostenpflichtiger Vertrag kommt erst zustande, wenn du die Bestellung über den Button „zahlungspflichtig bestellen“ abschließt und wir sie bestätigen. Für kostenpflichtige Angebote gilt die Widerrufsbelehrung.</p>
+<h3>§ 4 Nutzungsrechte</h3><p>Du erhältst ein einfaches, nicht übertragbares Recht, das Programm für dich persönlich und privat zu nutzen. Kopieren, Weiterverkauf oder öffentliches Zugänglichmachen der Inhalte ist ohne schriftliche Zustimmung nicht erlaubt.</p>
+<h3>§ 5 Deine Verantwortung</h3><p>Du bist mindestens 18 Jahre alt und nutzt das Programm in eigener Verantwortung. Bei gesundheitlichen Fragen, Vorerkrankungen, Schwangerschaft oder der Einnahme von Medikamenten sprich bitte vorher mit einer Ärztin oder einem Arzt (siehe Gesundheitshinweis).</p>
+<h3>§ 6 Verfügbarkeit und Änderungen</h3><p>Wir bemühen uns um eine dauerhafte Verfügbarkeit, garantieren sie aber nicht. Das kostenlose Angebot kann geändert oder eingestellt werden.</p>
+<h3>§ 7 Haftung</h3><p>Wir haften unbeschränkt bei Vorsatz und grober Fahrlässigkeit, bei Verletzung von Leben, Körper oder Gesundheit, nach dem Produkthaftungsgesetz und soweit wir eine Garantie übernommen haben. Bei leichter Fahrlässigkeit haften wir nur bei Verletzung wesentlicher Vertragspflichten (Pflichten, auf deren Einhaltung du regelmäßig vertrauen darfst) und begrenzt auf den vorhersehbaren, typischen Schaden. Im Übrigen ist die Haftung ausgeschlossen.</p>
+<h3>§ 8 Verbraucherstreitbeilegung</h3><p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+<h3>§ 9 Schlussbestimmungen</h3><p>Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts. Zwingende Verbraucherschutzvorschriften des Staates, in dem du lebst, bleiben unberührt. Sollte eine Bestimmung unwirksam sein, bleibt die Wirksamkeit der übrigen unberührt.</p><p>Stand: September 2026</p></div>
+<div class="pane" data-t="wid"><p><b>Hinweis:</b> Das Programm ist derzeit kostenlos. Die folgende Widerrufsbelehrung gilt für kostenpflichtige Angebote, sobald es solche gibt.</p>
+<h3>Widerrufsrecht</h3><p>Du hast das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsschlusses.</p><p>Um dein Widerrufsrecht auszuüben, musst du uns (Michaela Schäfer, Kaiser-Friedrich-Str. 82, 41460 Neuss, E-Mail: in60tagenrauchfrei@gmail.com) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief oder eine E-Mail) über deinen Entschluss, diesen Vertrag zu widerrufen, informieren. Du kannst dafür das untenstehende Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist. Zur Wahrung der Widerrufsfrist reicht es aus, dass du die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absendest.</p>
+<h3>Folgen des Widerrufs</h3><p>Wenn du diesen Vertrag widerrufst, haben wir dir alle Zahlungen, die wir von dir erhalten haben, unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über deinen Widerruf bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das du bei der ursprünglichen Transaktion eingesetzt hast; dir werden wegen der Rückzahlung keine Entgelte berechnet.</p>
+<h3>Vorzeitiges Erlöschen bei digitalen Inhalten</h3><p>Das Widerrufsrecht erlischt bei einem Vertrag über die Lieferung digitaler Inhalte, die nicht auf einem körperlichen Datenträger geliefert werden, wenn wir mit der Ausführung begonnen haben, nachdem du ausdrücklich zugestimmt hast, dass wir vor Ablauf der Widerrufsfrist mit der Ausführung beginnen, und du bestätigt hast, dass du dadurch dein Widerrufsrecht verlierst. Diese Zustimmung und Bestätigung holen wir bei einer kostenpflichtigen Bestellung gesondert ein.</p>
+<h3>Muster-Widerrufsformular</h3><p>(Wenn du den Vertrag widerrufen willst, fülle dieses Formular aus und sende es zurück.)<br>An Michaela Schäfer, Kaiser-Friedrich-Str. 82, 41460 Neuss, E-Mail: in60tagenrauchfrei@gmail.com:<br>Hiermit widerrufe(n) ich/wir den von mir/uns abgeschlossenen Vertrag über die Erbringung der folgenden Dienstleistung / die Lieferung des folgenden digitalen Inhalts: ______<br>Bestellt am: ______ &nbsp; Name des/der Verbraucher(s): ______ &nbsp; Anschrift: ______<br>Datum: ______ &nbsp; Unterschrift (nur bei Mitteilung auf Papier): ______</p></div>
+<div class="pane" data-t="dat"><h3>1. Verantwortlicher</h3><p>Michaela Schäfer, Lebensbegleiterin, Anschrift siehe Impressum, E-Mail: in60tagenrauchfrei@gmail.com</p>
+<h3>2. Was mit deinen Eingaben passiert</h3><p>Deine Eingaben im Programm (Name, Startdatum, Zigaretten pro Tag, Preis, Tagebuch, Gefühle, Suchtdruck, Notizen, Fortschritt) werden <b>ausschließlich im Speicher deines eigenen Browsers (localStorage) auf deinem Gerät</b> abgelegt. Sie werden <b>nicht an uns oder Dritte übertragen</b>. Da das Tagebuch gesundheitsbezogene Angaben enthalten kann, sind sie damit nur für dich sichtbar. Die Speicherung ist für die von dir gewünschte Funktion erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG; Art. 6 Abs. 1 lit. b DSGVO). Du kannst die Daten jederzeit löschen, indem du die Website-Daten in deinem Browser löschst oder im Programm „Neu starten“ wählst. Wenn du das Gerät wechselst oder die Browserdaten löschst, sind sie weg.</p>
+<h3>3. Hosting (GitHub Pages)</h3><p>Diese Website wird über GitHub Pages bereitgestellt (GitHub Inc., 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA, ein Unternehmen der Microsoft-Gruppe). Beim Aufruf verarbeitet der Hoster technisch notwendige Daten wie deine IP-Adresse, Datum und Uhrzeit sowie Browserangaben in Server-Logdateien. Rechtsgrundlage ist unser berechtigtes Interesse an einem sicheren und stabilen Betrieb (Art. 6 Abs. 1 lit. f DSGVO). Eine Übermittlung in die USA kann stattfinden; sie stützt sich auf die Garantien, die der Anbieter hierfür bereitstellt (z. B. EU-US Data Privacy Framework oder Standardvertragsklauseln).</p>
+<h3>4. Keine Cookies, kein Tracking</h3><p>Wir setzen keine Cookies, keine Analyse- oder Werbedienste ein und laden keine Schriftarten oder Skripte von Drittanbietern nach.</p>
+<h3>5. Kontakt per E-Mail</h3><p>Wenn du uns schreibst, verarbeiten wir deine Angaben zur Bearbeitung deiner Anfrage (Art. 6 Abs. 1 lit. b oder f DSGVO) und löschen sie, wenn sie nicht mehr erforderlich sind und keine Aufbewahrungspflichten bestehen.</p>
+<h3>6. WhatsApp-Gruppe (freiwillig)</h3><p>Über einen Link kannst du freiwillig einer WhatsApp-Gruppe beitreten. Dabei gelten die Datenschutzbestimmungen von WhatsApp (Meta). Andere Gruppenmitglieder können deine Telefonnummer und deinen Namen sehen. Teile in der Gruppe keine Gesundheitsdaten, die du nicht teilen möchtest.</p>
+<h3>7. Deine Rechte</h3><p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15 bis 21 DSGVO). Du kannst dich außerdem bei einer Datenschutzaufsichtsbehörde beschweren.</p><p>Stand: September 2026</p></div>
+<div class="pane" data-t="imp"><h3>Angaben gemäß § 5 DDG</h3><p>Michaela Schäfer<br>Lebensbegleiterin<br>Kaiser-Friedrich-Str. 82<br>41460 Neuss</p>
+<h3>Kontakt</h3><p>E-Mail: in60tagenrauchfrei@gmail.com<br>Mobil: <a href="tel:+491777518892">+49 177 - 75 188 92</a></p>
+<h3>Umsatzsteuer</h3><p><span class="ph">[USt-IdNr. oder Hinweis: Kleinunternehmer gemäß § 19 UStG, keine Umsatzsteuer ausgewiesen, oder streichen, falls nicht zutreffend]</span></p>
+<h3>Verantwortlich für den Inhalt (§ 18 Abs. 2 MStV)</h3><p>Michaela Schäfer, Anschrift wie oben</p>
+<h3>Haftung für Links</h3><p>Diese Website enthält Links zu externen Seiten (z. B. WhatsApp). Auf deren Inhalte haben wir keinen Einfluss und übernehmen dafür keine Gewähr. Für die Inhalte ist der jeweilige Anbieter verantwortlich.</p></div>
+<div class="pane" data-t="ges"><h3>Kein Ersatz für ärztliche Beratung</h3><p>Das Programm dient der Information und Motivation. Es ersetzt keine ärztliche, psychologische oder therapeutische Beratung oder Behandlung und stellt keine Diagnose.</p>
+<h3>Keine Erfolgsgarantie</h3><p>Ob und wie schnell du rauchfrei wirst, ist individuell verschieden. Wir versprechen keinen bestimmten Erfolg und keine Heilung. Zahlen wie gesparte Zigaretten, Geld oder Lebenszeit sind Rechenbeispiele bzw. grobe Schätzungen.</p>
+<h3>Sprich mit deiner Ärztin oder deinem Arzt</h3><p>Bei Vorerkrankungen, Schwangerschaft, Stillzeit, psychischen Erkrankungen, regelmäßiger Medikamenteneinnahme oder wenn Entzugserscheinungen stark belasten, sprich bitte mit deiner Hausarztpraxis. Beende keine ärztlich verordnete Behandlung auf eigene Faust.</p>
+<h3>Im Notfall</h3><p>Bei akuten Beschwerden wie starken Brustschmerzen, Atemnot oder der Sorge, dir etwas anzutun, wähle sofort den Notruf <b>112</b>.</p></div>
+  </div>
+  <div class="lg-foot">
+   <label><input type="checkbox" id="lgC1"><span>Ich bin mindestens 18 Jahre alt und habe die Nutzungsbedingungen (AGB) sowie den Gesundheitshinweis gelesen und akzeptiere sie.</span></label>
+   <label><input type="checkbox" id="lgC2"><span>Ich habe die Datenschutzerklärung zur Kenntnis genommen.</span></label>
+   <button class="g-go" id="lgGo" disabled onclick="lgAccept()">Zustimmen und weiter</button>
+  </div>
+ </div>
+</div>
+<script>
+(function(){
+var V='2026-09-1',ov=document.getElementById('lgOv'),mode='read';
+function ok(){try{var c=JSON.parse(localStorage.getItem('rr_consent'));return !!c&&c.v===V}catch(e){return false}}
+window.rrConsent=ok;
+function tab(n){ov.querySelectorAll('.lg-tabs button').forEach(function(b){b.classList.toggle('on',b.dataset.t===n)});ov.querySelectorAll('.pane').forEach(function(p){p.classList.toggle('on',p.dataset.t===n)});ov.querySelector('.lg-body').scrollTop=0}
+window.lgOpen=function(n,consent){mode=consent?'consent':'read';ov.classList.toggle('consent',!!consent);tab(n||'agb');ov.classList.add('on');document.body.style.overflow='hidden'};
+window.lgClose=function(){if(mode==='consent'&&!ok())return;ov.classList.remove('on');document.body.style.overflow=''};
+window.lgAccept=function(){if(!(document.getElementById('lgC1').checked&&document.getElementById('lgC2').checked))return;try{localStorage.setItem('rr_consent',JSON.stringify({v:V,t:new Date().toISOString()}))}catch(e){}mode='read';lgClose();if(localStorage.getItem('rr_intro')!=='1'&&window.gOpen)gOpen()};
+function upd(){document.getElementById('lgGo').disabled=!(document.getElementById('lgC1').checked&&document.getElementById('lgC2').checked)}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&ov.classList.contains('on')&&mode==='read')lgClose()});
+document.addEventListener('DOMContentLoaded',function(){
+ ov.querySelectorAll('.lg-tabs button').forEach(function(b){b.onclick=function(){tab(b.dataset.t)}});
+ document.getElementById('lgC1').onchange=upd;document.getElementById('lgC2').onchange=upd;
+ if(!ok())lgOpen('agb',true);
+});
+})();
+</script>
+</body>
+</html>
